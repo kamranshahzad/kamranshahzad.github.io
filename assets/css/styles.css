@@ -2,5 +2,38 @@
 
 
  body {
- 	background-color: gray;
+
+ }
+
+
+
+
+/* _commons */
+
+ .no-margin {}
+ .no-padding { padding: 0;}
+
+
+
+ h1 { margin: 0;}
+
+
+/* _index page */
+
+header {
+    background-color: #006680;
+    padding: 15px;
+}
+
+ header h1 {
+     color: #ffffff;
+     font-family: 'Quattrocento Sans', sans-serif;
+     margin-top: 10px;
+ }
+
+ header p {
+     color: rgba(232, 232, 232, 0.7);
+     font-size: 12px;
+     margin-left: 3px;
+     font-style: italic;
  }
