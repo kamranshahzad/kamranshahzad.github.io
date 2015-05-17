@@ -1,12 +1,44 @@
 
 
 
- body {
+html, body{
+    height:100%;
+}
 
- }
+body{
+    font-family: "Raleway";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+}
 
 
 
+.b-color-1 { background-color: #8328ff;}
+.b-color-2 { background-color: #c4ff61;}
+.b-color-3 { background-color: #fff53a;}
+.b-color-4 { background-color: #66aeff;}
+.b-color-5 { background-color: #baff68;}
+.b-color-6 { background-color: #ff625f;}
+.b-color-7 { background-color: #39ffba;}
+.b-color-8 { background-color: #ff3645;}
+.b-color-9 { background-color: #ff9e41;}
+.b-color-10 { background-color: #a5ffd9;}
+.b-color-11 { background-color: #0aff00;}
+.b-color-12 { background-color: #bed5ff;}
+.b-color-13 { background-color: #ffcec2;}
+.b-color-14 { background-color: #cfff65;}
+.b-color-15 { background-color: #8560ff;}
+.b-color-16 { background-color: #1c8bff;}
+
+.color-1 {color:#6dc577;}
+.color-2 {color:#589fbb;}
+.color-3 { color:#fc5b3b;}
+.color-4 { color:#fcb13b;}
+.color-5 { color:#0ce1e9;}
 
 /* _commons */
 
@@ -14,8 +46,57 @@
  .no-padding { padding: 0;}
 
 
+#circle {
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
 
- h1 { margin: 0;}
+.inner-icon {
+    display: block;
+    padding: 9px 20px;
+}
+
+.icon-container {
+     padding: 20px;
+}
+
+.icon-container h3{
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.icon-container a {
+    color: #323232;
+    font-size: 12px;
+}
+
+.icon-container a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+.inline-projects{
+     padding: 20px;
+}
+.inline-projects a.label { color: black; font-weight: bold; font-size: 1em;}
+.inline-projects .links { margin-left: 10px;}
+.inline-projects .links a{
+    color: #323232;
+    font-size: 12px;
+}
+.inline-projects .links a:hover{
+    text-decoration: none;
+}
+.tech-name { text-align: right; color: #797979; font-size: 12px; font-weight: bold;}
+.tech-name i { font-size: 14px;}
+
 
 
 /* _index page */
@@ -34,6 +115,156 @@ header {
  header p {
      color: rgba(232, 232, 232, 0.7);
      font-size: 12px;
-     margin-left: 3px;
      font-style: italic;
  }
+
+
+content {
+     margin: 0 auto;
+     display: block;
+     height: 100%;
+     max-width: 1200px;
+ }
+
+content h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+ footer {
+     background-color: #0d0d0d;
+     color: #ffffff;
+     text-align: center;
+     padding: 20px;
+ }
+
+.list-inline{padding-left:0;list-style:none;margin-left:-5px}
+.list-inline>li{display:inline-block;}
+
+ul.social-buttons{margin-bottom:0}
+ul.social-buttons li a{display:block;width:40px;height:40px;border-radius:100%;font-size:16px;line-height:40px;outline:0;color:#fff;background-color: #777777;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{background-color: #009fc6
+}
+
+
+
+
+
+
+
+
+/*
+    Sub Page
+*/
+.top-bar {
+    background-color: #dedede;
+    padding: 20px;
+}
+
+.top-bar h3{
+    font-weight: 500;
+    margin: 10px;
+}
+
+.top-bar p{
+    color: #5b5b5b;
+    font-size: 12px;
+}
+
+
+.demo-container h2 { border-bottom: dashed 1px #dbdbdb; margin-bottom: 5px;}
+
+
+
+
+
+/*
+    Blog Listing
+*/
+
+article { margin-left: 10px;}
+
+.post-summary
+{
+    clear:both;
+    margin-bottom:0;
+    float:left;
+    width:100%
+}
+.post-summary .blog-link
+{
+    display:inline-block;
+    margin-bottom:0;
+    clear:right;
+    padding:15px;
+    float:left;
+    vertical-align:middle;
+    margin-top:0;
+    max-width:80%;
+    font-size:1em;
+    background-color: #009fc6;
+}
+.post-summary a{
+    color: #ffffff;
+}
+.post-summary a{
+    text-decoration: none;
+}
+
+.post-summary .blog-link:hover
+{
+    background-color: rgba(76, 184, 245, 0.9);
+}
+@media screen and (max-width:600px)
+{
+    .post-summary .blog-link
+    {
+        font-size:1em
+    }
+
+}
+.post-summary time
+{
+    height:100%;
+    background-color: #005679;
+    display:inline-block;
+    padding:8px;
+    float:left;
+    text-align:center;
+    vertical-align:middle;
+    color: #ffffff;
+}
+.post-summary time span
+{
+    display:block;
+    font-size:12px;
+    opacity:.8
+}
+.post-summary img
+{
+    display:none;
+    margin:0!important
+}
+.post-summary p
+{
+    padding:.5em .5em .7em;
+    float:left;
+    margin-left:4em;
+    clear:both;
+    font-size:16px;
+    opacity:.8
+}
+.post-summary p a
+{
+    background-color:transparent;
+    padding:0
+}
+
+
+
+
+ /*
+    Media Queries
+ */
