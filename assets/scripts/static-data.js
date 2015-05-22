@@ -11,11 +11,11 @@ var header_data = {
         title: "kamranshahzad.github.io",
         tagline: "Full Stack Web & App Developer",
         links:[
-            {label:'Home',url:'http://www.domjs.com'},
-            {label:'Projects',url:'http://www.domjs.com'},
-            {label:'Articles',url:'http://www.domjs.com'},
-            {label:'About',url:'http://www.domjs.com'},
-            {label:'Contact',url:'http://www.domjs.com'},
+            {label:'Home',url:'http://kamranshahzad.github.io'},
+            {label:'Projects',url:'http://kamranshahzad.github.io/#projectsContainer'},
+            {label:'Articles',url:'http://kamranshahzad.github.io/#articleContainer'},
+            {label:'About',url:'http://kamranshahzad.github.io/#aboutContainer'},
+            {label:'Contact',url:'http://kamranshahzad.github.io/#contactContainer'},
         ]
     };
 
