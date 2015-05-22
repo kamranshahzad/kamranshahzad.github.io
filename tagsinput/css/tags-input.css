@@ -1,0 +1,52 @@
+.tags-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    cursor: text;
+}
+
+.tags-container input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto !important;
+    max-width: inherit;
+    margin-left: 3px;
+}
+.tags-container input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
+
+.tag-el{
+    display: inline-block;
+    background-color: #ffffac;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.tag-el .tag-close{
+    font-size: 14px;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* suggestion container */
+.tag-suggestions {
+    background-color: #00aaff;
+}

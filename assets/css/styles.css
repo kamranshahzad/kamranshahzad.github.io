@@ -201,23 +201,27 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 /*
     Sub Page
 */
-.top-bar {
-    background-color: #dedede;
+.top-container {
+    background-color: rgba(206, 206, 206, 0.47);
     padding: 20px;
 }
-
-.top-bar h3{
+.top-container h3{
     font-weight: 500;
-    margin: 10px;
+}
+.top-container p{
+    color: #939393;
+    font-size: 13px;
+    margin: 15px;
 }
 
-.top-bar p{
-    color: #5b5b5b;
-    font-size: 12px;
-}
+
+.content-container h2 { font-size: 1.4em; margin-bottom: 10px; color: #004E7D; font-weight: 400;}
+.content-container .patch { margin-top: 30px;}
 
 
-.demo-container h2 { border-bottom: dashed 1px #dbdbdb; margin-bottom: 5px;}
+
+pre { padding: 0px;}
+
 
 
 

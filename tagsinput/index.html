@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> TagsInput | VanillaJS </title>
+    <meta name="keywords" content="sortable, reorder, list, javascript, html5, drag and drop, dnd, animation, groups, angular, ng-sortable, react, mixin, effects, rubaxa"/>
+    <meta name="description" content="Sortable - is a minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React and any CSS library, e.g. Bootstrap."/>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
@@ -15,7 +17,8 @@
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" >
+    <link rel="stylesheet" type="text/css" href="css/tags-input.css" >
     <style>
     </style>
 </head>
@@ -23,20 +26,254 @@
 
 <div class="github-fork-ribbon-wrapper right">
     <div class="github-fork-ribbon">
-        <a href="https://github.com/kamranshahzad" target="_blank">Fork me on GitHub</a>
+        <a href="https://github.com/kamranshahzad/TagsInput" target="_blank">Fork me on GitHub</a>
     </div>
 </div>
 
+<header id="headerView"></header>
 
+
+
+<div class="top-container">
+
+    <div class="container">
+            <h3>Tags Input</h3>
+            <div class="row">
+                <div class="col-md-9">
+                    <p>A tags input is an input box that automatically creates tags. Tags Input handles all the data, your form just sees a comma-delimited list of tags </p>
+                    <ul class="list-inline">
+                        <li>
+                            <iframe width="80" height="20" frameborder="0" scrolling="0" allowtransparency="true" src="//ghbtns.com/github-btn.html?user=kamranshahzad&amp;repo=TagsInput&amp;type=watch&amp;count=true"></iframe>
+                        </li>
+                        <li>
+                            <iframe width="80" height="20" frameborder="0" scrolling="0" allowtransparency="true" src="//ghbtns.com/github-btn.html?user=kamranshahzad&amp;repo=TagsInput&amp;type=fork&amp;count=true"></iframe>
+                        </li>
+                        <li>
+                            <iframe frameborder="0" id="twitter-widget-0" scrolling="no" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.b169aa788731255dd55f1bb243b660e1.en.html#_=1432283652107&amp;count=horizontal&amp;dnt=false&amp;hashtags=bootstraptagsinput&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Ftimschlechter.github.io%2Fbootstrap-tagsinput%2Fexamples%2F&amp;size=m&amp;text=Bootstrap%20Tags%20Input&amp;url=http%3A%2F%2Ftimschlechter.github.io%2Fbootstrap-tagsinput%2Fexamples%2F" class="navbar-link twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 83px; height: 20px;"></iframe>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");</script>
+                        </li>
+                        <li>
+                            <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;" id="___plusone_0"><iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1432283651299" name="I0_1432283651299" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;origin=http%3A%2F%2Ftimschlechter.github.io&amp;url=http%3A%2F%2Ftimschlechter.github.io%2Fbootstrap-tagsinput%2Fexamples%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_GB.eXYHBzuKFCQ.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCMiSOlimvcoxYnCv0LaUWTFaaFKCw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1432283651299&amp;parent=http%3A%2F%2Ftimschlechter.github.io&amp;pfname=&amp;rpctoken=21871857" data-gapiattached="true" title="+1"></iframe></div>
+                            <script type="text/javascript">
+                                (function () {
+                                    var po = document.createElement('script');
+                                    po.type = 'text/javascript';
+                                    po.async = true;
+                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+                    <a href="https://github.com/kamranshahzad/TagsInput/archive/master.zip" class="btn btn-success">
+                        Downloads (.zip)
+                    </a>
+                </div>
+            </div><!--@row-->
+    </div><!--@container-->
+
+</div><!--@top-container-->
+<br/><br/>
+
+<div class="container content-container">
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>Try it yourself!</h2>
+            <input type="text" id="" value="one,two,three" class="form-control" style="display:none;" />
+            <div class="tags-container" id="tagsContainer" >
+                <input type="text" id="tag_txt" placeholder="" style="width: 3em ! important;" size="1">
+            </div> <!--@tags-container-->
+
+            <!--@content-->
+        </div>
+    </div>
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>How to use?</h2>
+    <pre>
+        <code class="javascript">
+            function person(){
+                return "Hello";
+            }
+            options = {};
+            var obj = new TagsInput(options);
+        </code>
+    </pre>
+
+            <!--@content-->
+        </div>
+    </div>
+
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>Options</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Options</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>tagClass</code></td>
+                        <td>
+                            Classname for the tags, or a function returning a classname
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--@content-->
+        </div>
+    </div>
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>Methods</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Options</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <!--@content-->
+        </div>
+    </div>
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>Events</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Options</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <!--@content-->
+        </div>
+    </div>
+
+    <div class="row patch">
+        <div class="col-md-12">
+            <!--content-->
+            <h2>Options</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Options</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <!--@content-->
+        </div>
+    </div>
+
+
+
+</div><!--@container-->
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/>
+
+
+
+<footer id="footerLinksContainer"> </footer>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="vendor/underscore-min.js"></script>
-<script src="vendor/backbone-min.js"></script>
-<script src="assets/scripts/static-data.js"></script>
-<script src="assets/scripts/app.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="../vendor/underscore-min.js"></script>
+<script src="../assets/scripts/static-data.js"></script>
+<script src="../assets/scripts/app.js"></script>
+<script src="scripts/tags-input.js"></script>
 <script>
+    hljs.initHighlightingOnLoad();
 
+
+    (function ($) {
+        $.get('../templates/headerView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#headerView').append(tplHtml(header_data));
+        });
+
+        $.get('../templates/linksView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#footerLinksContainer').append(tplHtml(footer_links));
+        });
+
+        //Project Examples
+        var options = {
+            _list : ['rawalpindi','lahore','karachi','islamabad','attock','gujarkhan','rawat'],
+            onAdded : function(evt){
+                //_log("===> "+ evt.tag_text);
+            }/*,
+             onTransform : function(evt){
+             evt.tag_text = evt.tag_text.toUpperCase();
+             }*/
+        };
+        var obj = new TagsInput(options);
+
+
+
+
+    }(jQuery));
 </script>
 </body>
 </html>
