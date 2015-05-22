@@ -2,11 +2,72 @@
 
 
 
+
+/*
+*  Header
+*/
+
+var header_data = {
+        title: "kamranshahzad.github.io",
+        tagline: "Full Stack Web & App Developer",
+        links:[
+            {label:'Home',url:'http://www.domjs.com'},
+            {label:'Projects',url:'http://www.domjs.com'},
+            {label:'Articles',url:'http://www.domjs.com'},
+            {label:'About',url:'http://www.domjs.com'},
+            {label:'Contact',url:'http://www.domjs.com'},
+        ]
+    };
+
+
+/*
+*   Footer links
+* */
+
+var footer_links = {
+    links:[
+        {label:"",url:"",icon:"fa fa-twitter"},
+        {label:"",url:"",icon:"fa fa-facebook"},
+        {label:"",url:"https://pk.linkedin.com/pub/kamran-shahzad/98/a16/47",icon:"fa fa-linkedin"},
+        {label:"",url:"",icon:"fa fa-google-plus"},
+        {label:"",url:"",icon:"fa fa-stack-overflow"},
+        {label:"",url:"",icon:"fa fa-codepen"},
+        {label:"",url:"",icon:"fa fa-git"},
+    ]
+};
+
+
+
+
+
+
+/*
+*   Blog articles list
+* */
+
+var articals = [
+    {title:"How Single Form Works? Lets see",url:"http://www.google.com"},
+    {title:"The idea of Suggest List. Have you any?",url:"http://www.google.com"}
+];
+
+
+
+
+
+
+
+
+
+
+/*
+*   Projects
+*/
 var projects = [
     {
         title:'Viewport',
         icon:'fa fa-mobile',
         bgclass:'b-color-1',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -16,6 +77,7 @@ var projects = [
         title:'Suggest List',
         icon:'fa fa-list',
         bgclass:'b-color-2',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -25,15 +87,17 @@ var projects = [
         title:'TagsInput',
         icon:'fa fa-tag',
         bgclass:'b-color-3',
-        description: 'A modern dialog library which is highly configurable and easy to style.' ,
+        url: "http://kamranshahzad.github.io/tagsinput/",
+        description: 'Simple VanillaJS component for inputing tags.' ,
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/TagsInput'},{label:'npmjs',url:'http://knd/domjs'}
         ]
     },
     {
         title:'Single Line Form',
         icon:'fa fa-square-o',
         bgclass:'b-color-4',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -43,6 +107,7 @@ var projects = [
         title:'Bulk Upload',
         icon:'fa fa-upload',
         bgclass:'b-color-5',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -52,6 +117,7 @@ var projects = [
         title:'Responsive Menus',
         icon:'fa fa-mobile',
         bgclass:'b-color-6',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -61,6 +127,7 @@ var projects = [
         title:'Layout Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-7',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -70,6 +137,7 @@ var projects = [
         title:'Theme Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-8',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -79,6 +147,7 @@ var projects = [
         title:'XMLForm Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-9',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -88,6 +157,7 @@ var projects = [
         title:'Dashboard Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-10',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -97,6 +167,7 @@ var projects = [
         title:'Taxonomy Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-11',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -106,6 +177,7 @@ var projects = [
         title:'GroupList Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-12',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -115,6 +187,7 @@ var projects = [
         title:'CodeSnippet Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-13',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
@@ -124,6 +197,7 @@ var projects = [
         title:'CodeMirror Bundle',
         icon:'fa fa-mobile',
         bgclass:'b-color-14',
+        url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}

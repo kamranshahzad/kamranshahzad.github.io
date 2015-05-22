@@ -10,45 +10,17 @@
     <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
-    <![endif]-->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <style>
     </style>
 </head>
 <body>
 
-<div class="github-fork-ribbon-wrapper left">
-    <div class="github-fork-ribbon">
-        <a href="https://github.com/kamranshahzad" target="_blank">Fork me on GitHub</a>
-    </div>
-</div>
 
 
 
-<header>
+<header id="headerView">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 top-title">
-                <h1 id="site_title">kamranshahzad.github.io</h1>
-                <p><span class="tag-line">Full Stack Web & App Developer</span></p>
-            </div>
-            <div class="col-md-6 top-nav">
-                <ul class="top-list-inline">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">Projects</a></li>
-                    <li role="presentation"><a href="#">Articles</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
-                    <li role="presentation"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div><!--@container-->
 </header>
 
 
@@ -85,6 +57,8 @@
             </ul>
         </div><!--@articles-->
 
+        <a href="#" class="blog_more" > Read More .. </a>
+
     </div><!--@article-container -->
 
 
@@ -112,17 +86,8 @@
 
 
 
-<footer>
+<footer id="footerLinksContainer">
 
-    <ul class="list-inline social-buttons">
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://pk.linkedin.com/pub/kamran-shahzad/98/a16/47"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href=""><i class="fa fa-stack-overflow"></i></a></li>
-        <li><a href=""><i class="fa fa-codepen"></i></a></li>
-        <li><a href=""><i class="fa fa-git"></i></a></li>
-    </ul>
 
 </footer>
 
@@ -137,7 +102,7 @@
                 </div>
             </div>
             <div class="col-md-10 col-sm-10 col-xs-10">
-                <h3><%= title %></h3>
+                <h3><a href="<%= url %>"><%= title %></a></h3>
                 <p><%= description %></p>
                 <% _.each( links, function( item ){ %>
                     <a href="<%= item.url %>"> -> <%= item.label %> </a> <br/>
@@ -171,7 +136,6 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="vendor/underscore-min.js"></script>
-<script src="vendor/backbone-min.js"></script>
 <script src="assets/scripts/static-data.js"></script>
 <script src="assets/scripts/app.js"></script>
 <script>
@@ -179,6 +143,20 @@
 
 
     (function ($) {
+
+        $.get('templates/headerView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#headerView').append(tplHtml(header_data));
+        });
+
+        $.get('templates/linksView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#footerLinksContainer').append(tplHtml(footer_links));
+        });
+
+
+
+
 
 
         _.each(projects , function(value, key){
@@ -196,14 +174,6 @@
         }
 
         loadInlineProjects();
-
-
-
-
-        var articals = [
-            {title:"How Single Form Works? Lets see",url:"http://www.google.com"},
-            {title:"The idea of Suggest List. Have you any?",url:"http://www.google.com"}
-        ];
 
         function loadArticals(){
             var tpl = $("#articalTemplate").html();

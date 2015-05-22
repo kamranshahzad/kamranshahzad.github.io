@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 top-title">
+            <h1 id="site_title"><%= title %></h1>
+            <p><span class="tag-line"><%= tagline %></span></p>
+        </div>
+        <div class="col-md-6 top-nav">
+            <ul class="top-list-inline">
+                <% _.each( links, function( item ){ %>
+                    <li role="presentation"><a href="<%= item.url %>"><%= item.label %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+
+</div><!--@container-->
