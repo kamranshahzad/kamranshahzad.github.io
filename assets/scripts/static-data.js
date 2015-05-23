@@ -68,9 +68,9 @@ var projects = [
         icon:'fa fa-mobile',
         bgclass:'b-color-1',
         url: "#",
-        description: 'A modern dialog library which is highly configurable and easy to style.' ,
+        description: "Multiple views to check responsive layouts on different dimensions." ,
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'http://www.domjs.com'},{label:'npmjs',url:'http://knd/domjs'}
         ]
     },
     {
@@ -78,9 +78,9 @@ var projects = [
         icon:'fa fa-list',
         bgclass:'b-color-2',
         url: "#",
-        description: 'A modern dialog library which is highly configurable and easy to style.' ,
+        description: 'Suggest list for input field using VanillaJS' ,
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'http://www.domjs.com'},{label:'npmjs',url:'http://knd/domjs'}
         ]
     },
     {
@@ -98,9 +98,9 @@ var projects = [
         icon:'fa fa-square-o',
         bgclass:'b-color-4',
         url: "#",
-        description: 'A modern dialog library which is highly configurable and easy to style.' ,
+        description: 'Stylish one field form with multi-step and progress bar.' ,
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'http://www.domjs.com'},{label:'npmjs',url:'http://knd/domjs'}
         ]
     },
     {
@@ -108,14 +108,14 @@ var projects = [
         icon:'fa fa-upload',
         bgclass:'b-color-5',
         url: "#",
-        description: 'A modern dialog library which is highly configurable and easy to style.' ,
+        description: 'Import data from ms excel, assign custom columns.' ,
         links:[
             {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
         ]
     },
     {
         title:'Responsive Menus',
-        icon:'fa fa-mobile',
+        icon:'fa fa-cube',
         bgclass:'b-color-6',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -125,7 +125,7 @@ var projects = [
     },
     {
         title:'Layout Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-desktop',
         bgclass:'b-color-7',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -135,7 +135,7 @@ var projects = [
     },
     {
         title:'Theme Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-laptop',
         bgclass:'b-color-8',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -145,7 +145,7 @@ var projects = [
     },
     {
         title:'XMLForm Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-code',
         bgclass:'b-color-9',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -155,7 +155,7 @@ var projects = [
     },
     {
         title:'Dashboard Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-building',
         bgclass:'b-color-10',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -165,7 +165,7 @@ var projects = [
     },
     {
         title:'Taxonomy Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-tree',
         bgclass:'b-color-11',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -175,7 +175,7 @@ var projects = [
     },
     {
         title:'GroupList Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-sort-amount-asc',
         bgclass:'b-color-12',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -185,7 +185,7 @@ var projects = [
     },
     {
         title:'CodeSnippet Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-file-code-o',
         bgclass:'b-color-13',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -195,7 +195,7 @@ var projects = [
     },
     {
         title:'CodeMirror Bundle',
-        icon:'fa fa-mobile',
+        icon:'fa fa-pencil-square-o',
         bgclass:'b-color-14',
         url: "#",
         description: 'A modern dialog library which is highly configurable and easy to style.' ,
@@ -212,7 +212,7 @@ var inline_projects = [
     {
         title:'Contacts Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:"This bundle store organization's employee contacts like directory.",
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -222,7 +222,7 @@ var inline_projects = [
     {
         title:'AdsBuilder Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'You can easily create ads and ads block in theme pages',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -242,7 +242,7 @@ var inline_projects = [
     {
         title:'Article Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Article manager provides all step for article writing.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -252,7 +252,7 @@ var inline_projects = [
     {
         title:'Data Mining',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Provide interactive interface for view and matching data w.r.t to criteria.',
         technology: 'Python',
         color: 'color-2',
         links:[
@@ -272,7 +272,7 @@ var inline_projects = [
     {
         title:'PlusAssetic Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Provide extra futures for asset management for Symfony2',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -322,7 +322,7 @@ var inline_projects = [
     {
         title:'User Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'User management bundle for Symfony2',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -342,7 +342,7 @@ var inline_projects = [
     {
         title:'BaseJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'This library provide basic VanillaJS functions',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -352,7 +352,7 @@ var inline_projects = [
     {
         title:'Help Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Add markdown files as bundle help',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -362,7 +362,7 @@ var inline_projects = [
     {
         title:'Report Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Basic bundle for managing/export reports.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -382,7 +382,7 @@ var inline_projects = [
     {
         title:'DomJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A VanillaJS helper library for traversing DOM',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -392,7 +392,7 @@ var inline_projects = [
     {
         title:'AnimateJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A VanillaJS library with CSS3 provide animation features. ',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -412,7 +412,7 @@ var inline_projects = [
     {
         title:'Front Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'This bundle help to build front page for websites',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -422,7 +422,7 @@ var inline_projects = [
     {
         title:'Organization Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A Symfony2 bundle for manage organizations.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -442,7 +442,7 @@ var inline_projects = [
     {
         title:'FormJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A VanillaJS library for handle HTML Forms',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -452,7 +452,7 @@ var inline_projects = [
     {
         title:'Util Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A Symfony2 bundle have basic functions.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[

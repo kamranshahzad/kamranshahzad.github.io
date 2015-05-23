@@ -140,12 +140,40 @@
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td><code>submitKeys</code></td>
+                        <td>
+                            Array of keycodes which will add a tag when typing in the input. (default: [13, 188], which are ENTER and comma)
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td><code>maxTags</code></td>
+                        <td>
+                            When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>maxChars</code></td>
+                        <td>
+                            Defines the maximum length of a single tag. (default: undefined)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>trimValue</code></td>
+                        <td>
+                            When true, automatically removes all whitespace around tags. (default: false)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>allowDuplicates</code></td>
+                        <td>
+                            When true, the same tag can be added multiple times. (default: false)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>onTagExists</code></td>
+                        <td>
+                            Function invoked when trying to add an item which allready exists. By default, the existing tag hides and fades in.
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -166,8 +194,34 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code>add</code></td>
+                    <td>
+                        Adds a tag
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>remove</code></td>
+                    <td>
+                        Adds a tag
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>removeAll</code></td>
+                    <td>
+                        <pre><code data-language="html" class="rainbow">var $elt = $('input').tagsinput('input');</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>refresh</code></td>
+                    <td>
+                        Refreshes the tags input UI. This might be usefull when you're adding objects as tags. When an object's text changes, you'll have to refresh to update the matching tag's text.
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>destroy</code></td>
+                    <td>
+                        Removes tagsinput behaviour
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -188,8 +242,39 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><code>preAdded</code></td>
+                    <td>
+                        Triggered just before an item gets added. Example:
+        <pre><code data-language="javascript" class="rainbow">
+        $('input').on('itemAdded', function(event) {
+            // event.item: contains the item
+        });
+        </code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>Added</code></td>
+                    <td>
+                        Triggered just after an item got added. Example:
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>preRemoved</code></td>
+                    <td>
+                        Triggered just before an item gets removed. Example:
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>Removed</code></td>
+                    <td>
+                        Triggered just after an item got removed. Example:
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>onFilter</code></td>
+                    <td>
+                        Removes tagsinput behaviour
+                    </td>
                 </tr>
                 </tbody>
             </table>
