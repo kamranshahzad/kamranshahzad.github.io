@@ -26,13 +26,13 @@ var header_data = {
 
 var footer_links = {
     links:[
-        {label:"",url:"",icon:"fa fa-twitter"},
+        {label:"",url:"https://twitter.com/kamran_shahzed",icon:"fa fa-twitter"},
         {label:"",url:"",icon:"fa fa-facebook"},
         {label:"",url:"https://pk.linkedin.com/pub/kamran-shahzad/98/a16/47",icon:"fa fa-linkedin"},
-        {label:"",url:"",icon:"fa fa-google-plus"},
+        {label:"",url:"https://plus.google.com/+KamranShahzads",icon:"fa fa-google-plus"},
         {label:"",url:"",icon:"fa fa-stack-overflow"},
         {label:"",url:"",icon:"fa fa-codepen"},
-        {label:"",url:"",icon:"fa fa-git"},
+        {label:"",url:"https://github.com/kamranshahzad",icon:"fa fa-git"},
     ]
 };
 
@@ -47,7 +47,10 @@ var footer_links = {
 
 var articals = [
     {title:"How Single Form Works? Lets see",url:"http://www.google.com"},
-    {title:"The idea of Suggest List. Have you any?",url:"http://www.google.com"}
+    {title:"The idea of Suggest List.",url:"http://www.google.com"},
+    {title:"The concept behind LayoutBundle",url:"http://www.google.com"},
+    {title:"Future plan for LayoutBundle",url:"http://www.google.com"},
+    {title:"How user permissions works in LayoutBundle?",url:"http://www.google.com"}
 ];
 
 
