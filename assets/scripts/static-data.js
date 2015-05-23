@@ -262,7 +262,7 @@ var inline_projects = [
     {
         title:'Link Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Manage links with nested categories.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -282,7 +282,7 @@ var inline_projects = [
     {
         title:'Core Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'This bundle provide a wrapper for fast development.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -292,7 +292,7 @@ var inline_projects = [
     {
         title:'Settings Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'This bundle provides settings form for all bundles.',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -312,7 +312,7 @@ var inline_projects = [
     {
         title:'CSS Framework',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'CSS helper library to build interactive interfaces.',
         technology: 'CSS3',
         color: 'color-3',
         links:[
@@ -332,7 +332,7 @@ var inline_projects = [
     {
         title:'Permissions Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A bundle for Symfony2 based permissions',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -372,7 +372,7 @@ var inline_projects = [
     {
         title:'BaseUtilJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'A VanillaJS library have some use-full functions.',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -402,7 +402,7 @@ var inline_projects = [
     {
         title:'WidgetJS',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Simple VanillaJS widget library.',
         technology: 'Javascript',
         color: 'color-4',
         links:[
@@ -432,7 +432,7 @@ var inline_projects = [
     {
         title:'PhpDoc Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Create static documentation files using Symfony2',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -462,7 +462,7 @@ var inline_projects = [
     {
         title:'Migration Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Data migration from any source',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
@@ -492,7 +492,7 @@ var inline_projects = [
     {
         title:'AngularForm Bundle',
         url: '#',
-        description:'It is a long established fact that a reader will be distracted by the',
+        description:'Dynamic forms using AngularJS',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
