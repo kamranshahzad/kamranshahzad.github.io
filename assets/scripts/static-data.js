@@ -4,12 +4,28 @@
 
 
 /*
+*  contact-us
+*/
+
+var contact_me = {
+    h1 : "I am available for work",
+    paragraph:"I am working as full time freelancer. So i am full time available for any kind of work.I am comfortable with work on any Timezone. Feel free to contact me. Here is my skype id: m_kamranshahzad"
+};
+
+
+
+
+
+
+
+
+/*
 *  Header
 */
 
 var header_data = {
         title: "kamranshahzad.github.io",
-        tagline: "Full Stack Web & App Developer",
+        tagline: "Full Stack Web Developer",
         links:[
             {label:'Home',url:'http://kamranshahzad.github.io'},
             {label:'Projects',url:'http://kamranshahzad.github.io/#projectsContainer'},
@@ -45,16 +61,26 @@ var footer_links = {
 *   Blog articles list
 * */
 
+
+var article_note = {note:"These articles gave to my views about components which i developed.I explained development flow and business login in these articles."};
+
+
 var articals = [
     {title:"How Single Form Works? Lets see",url:"http://www.google.com"},
     {title:"The idea of Suggest List.",url:"http://www.google.com"},
-    {title:"The concept behind LayoutBundle",url:"http://www.google.com"},
+    {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
     {title:"Future plan for LayoutBundle",url:"http://www.google.com"},
     {title:"How user permissions works in LayoutBundle?",url:"http://www.google.com"}
 ];
 
 
 
+var article_list = {
+    articles : [
+        {date: '25 May,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
+        {date: '30 May,2015',title : "The Posts",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"}
+    ]
+};
 
 
 

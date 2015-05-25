@@ -49,7 +49,8 @@
 
     <div class="row article-container" id="articleContainer">
         <h1>Articles</h1>
-        <div class="well well-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+
+        <div class="well well-lg" id="articleNote"></div>
 
 
         <div class="articles">
@@ -57,7 +58,7 @@
             </ul>
         </div><!--@articles-->
 
-        <a href="#" class="blog_more" > Read More .. </a>
+        <a href="http://kamranshahzad.github.io/blog/" class="blog_more" > Read More .. </a>
 
     </div><!--@article-container -->
 
@@ -70,16 +71,17 @@
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
             <p style="text-align: center">
-                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Mail Me</a>
+                <a href="mailto:bleak.unseen@gmail.com?Subject=Hello" target="_top">Mail Me</a>
             </p>
         </div>
 
     </div><!--@about-container -->
-
+    <br/><br/>
 
     <div class="contact-container" id="contactContainer">
-
     </div><!--@contactContainer-->
+
+
 
 
 
@@ -157,9 +159,14 @@
             $('#footerLinksContainer').append(tplHtml(footer_links));
         });
 
+        //article notes
+        var _noteTemplate = _.template("<%= note%>");
+        $('#articleNote').append(_noteTemplate(article_note));
 
 
-
+        //contact-me
+        var _contactTemplate = _.template("<h3><%= h1 %></h3><p><%= paragraph %></p>");
+        $('#contactContainer').append(_contactTemplate(contact_me));
 
 
         _.each(projects , function(value, key){
