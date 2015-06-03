@@ -8,8 +8,8 @@
 */
 
 var contact_me = {
-    h1 : "I am available for work",
-    paragraph:"I am working as full time freelancer. So i am full time available for any kind of work.I am comfortable with work on any Timezone. Feel free to contact me. Here is my skype id: m_kamranshahzad"
+    h1 : "Have a cool project in mind, and think I can help you with it? ",
+    paragraph:"Let’s get in touch. For work inquiries, please feel free to drop me a line at <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a>, and I'll get back to you as soon as possible. "
 };
 
 

@@ -242,13 +242,14 @@ pre { padding: 0px;}
     font-weight: 400;
 }
 .articles ul { list-style: none; }
-.articles ul li { line-height: 35px;}
+.articles ul li { }
 .articles ul li a {
     color: #ffffff;
     padding:10px;
     vertical-align:middle;
     font-size:13px;
     background-color: #009fc6;
+    line-height: 35px;
 }
 .articles ul li a:hover{
     text-decoration: none;
