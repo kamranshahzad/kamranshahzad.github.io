@@ -8,8 +8,8 @@
 */
 
 var contact_me = {
-    h1 : "Have a cool project in mind, and think I can help you with it? ",
-    paragraph:"Let’s get in touch. For work inquiries, please feel free to drop me a line at <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a>, and I'll get back to you as soon as possible. "
+    h1 : "Have a Idea that you want to transform into online business? ",
+    paragraph:"Let’s get in touch. <br/> <table style='width:100%'> <tr><td style='width:33.33%'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a></td> <td style='width:33.33%'><strong>Skype:</strong> m_kamranshahzad  </td> <td style='width:33.33%'><strong>Cell:</strong> +92 343 526 4443 </td> </tr><tbody> </tbody></table> "
 };
 
 
@@ -62,7 +62,7 @@ var footer_links = {
 * */
 
 
-var article_note = {note:"These articles gave to my views about components which i developed.I explained development flow and business login in these articles."};
+var article_note = {note:"I have written articles for my open source components. These articles/tutorials will help developers to better understand the code/workflow and how they can use these free components in their  projects."};
 
 
 var articals = [
