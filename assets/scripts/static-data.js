@@ -9,7 +9,7 @@
 
 var contact_me = {
     h1 : "Have a Idea that you want to transform into online business? ",
-    paragraph:"Let’s get in touch. <br/> <table style='width:100%'> <tr><td style='width:33.33%'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a></td> <td style='width:33.33%'><strong>Skype:</strong> m_kamranshahzad  </td> <td style='width:33.33%'><strong>Cell:</strong> +92 343 526 4443 </td> </tr><tbody> </tbody></table> "
+    paragraph:"Let’s get in touch. <br/> <table style='width:100%'> <tr><td style='width:25%'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a></td> <td style='width:20%'><strong>Skype:</strong> m_kamranshahzad  </td> <td style='width:20%'><strong>Cell:</strong> +92 343 526 4443 </td> <td style='width:35%'><strong>Website:</strong> http://www.kamranshahzad.github.io </td> </tr><tbody> </tbody></table> "
 };
 
 

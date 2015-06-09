@@ -202,15 +202,14 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     Sub Page
 */
 .top-container {
-    background-color: rgba(206, 206, 206, 0.47);
+    background-color: #f3f3f3;
     padding: 20px;
 }
 .top-container h3{
-    font-weight: 500;
+    font-weight: 600;
 }
 .top-container p{
-    color: #939393;
-    font-size: 13px;
+    color: #454545;
     margin: 15px;
 }
 
