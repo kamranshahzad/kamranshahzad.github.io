@@ -9,7 +9,8 @@
 
 var contact_me = {
     h1 : "Have a Idea that you want to transform into online business? ",
-    paragraph:"Let’s get in touch. <br/> <table style='width:100%'> <tr><td style='width:25%'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a></td> <td style='width:20%'><strong>Skype:</strong> m_kamranshahzad  </td> <td style='width:20%'><strong>Cell:</strong> +92 343 526 4443 </td> <td style='width:35%'><strong>Website:</strong> http://www.kamranshahzad.github.io </td> </tr><tbody> </tbody></table> "
+    //paragraph:"Let’s get in touch. <br/> <table style='width:100%'> <tr><td style='width:40%'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a></td> <td style='width:20%'><strong>Skype:</strong> m_kamranshahzad  </td> <td style='width:20%'><strong>Cell:</strong> +92 343 526 4443 </td> </tr><tbody> </tbody></table> "
+    paragraph: "Let’s get in touch. <div style='text-align=center;'><strong>Email:</strong> <a href='mailto:bleak.unseen@gmail.com?Subject=Hello' target='_top'>bleak.unseen@gmail.com</a> <br/> <strong>Cell:</strong> +92 343 526 4443 <br/> <strong>Skype:</strong> m_kamranshahzad </div>"
 };
 
 
@@ -62,23 +63,20 @@ var footer_links = {
 * */
 
 
-var article_note = {note:"I have written articles for my open source components. These articles/tutorials will help developers to better understand the code/workflow and how they can use these free components in their  projects."};
+var article_note = {note:"I have written articles for my open source components. These articles/tutorials will help developers to better understand the code/workflow and how they can use these open source components in their projects."};
 
 
 var articals = [
-    {title:"How Single Form Works? Lets see",url:"http://www.google.com"},
-    {title:"The idea of Suggest List.",url:"http://www.google.com"},
     {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
-    {title:"Future plan for LayoutBundle",url:"http://www.google.com"},
-    {title:"How user permissions works in LayoutBundle?",url:"http://www.google.com"}
+    {title:"Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
 ];
 
 
 
 var article_list = {
     articles : [
-        {date: '25 May,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
-        {date: '30 May,2015',title : "The Posts",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"}
+        {date: '23 August,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
+        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"}
     ]
 };
 
