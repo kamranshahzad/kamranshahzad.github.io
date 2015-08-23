@@ -283,6 +283,10 @@ pre { padding: 0px;}
 /*
     Blog Page
 */
+
+.blog-container {
+    font-family: 'Open Sans', sans-serif !important;
+}
 .blog-container h1 {
     text-align: center;
     margin: 3rem;
