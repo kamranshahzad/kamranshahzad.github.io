@@ -291,7 +291,7 @@ pre { padding: 0px;}
     font-size: 15px;
 }
 
-..blog-container .breadcrumb { font-style: 12px !important;}
+..blog-container .breadcrumb { font-size: 12px !important;}
 
 .blog-container h1 {
     text-align: left;
