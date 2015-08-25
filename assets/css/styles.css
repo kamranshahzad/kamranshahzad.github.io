@@ -315,12 +315,13 @@ figcaption {
     font-size: .875em;
     line-height: 1.6827;
     font-style: italic;
+    text-align: center;
 }
 
 img { margin:20px auto;display: block;max-width:100%;height:auto;}
 
 .blog-container h2 { font-size: 1.5em; font-weight: 400; margin: 10px; color: #ff754c;}
-.blog-container .date { margin-bottom: 15px; font-size: 12px;}
+.blog-container .date {  margin:5px 0 15px; font-size: 12px;}
 
 /*
     contact-container
