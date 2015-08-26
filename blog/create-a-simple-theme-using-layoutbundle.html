@@ -12,7 +12,13 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+
+    <link rel="stylesheet" href="../vendor/highlight/default.min.css">
+    <link rel="stylesheet" href="../vendor/highlight/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
     <style>
     </style>
@@ -34,15 +40,41 @@
             <ol class="breadcrumb">
                 <li><a href="http://kamranshahzad.github.io/">Home</a></li>
                 <li><a href="http://kamranshahzad.github.io/blog/">Blog</a></li>
-                <li class="active">The concept behind LayoutBundle</li>
+                <li class="active">create a simple theme using layoutbundle</li>
             </ol>
-            <h1>The concept behind LayoutBundle</h1>
+            <h1>Create a simple theme using layoutbundle</h1>
             <hr/>
             <div class="date">
-                <i class="fa fa-clock-o"></i> &nbsp; August 23th, 2015
+                <i class="fa fa-clock-o"></i> &nbsp; August 24th, 2015
             </div>
 
+
+            <h2>Where all themes will be place?</h2>
            
+            <p>
+                You can place your all theme in any bundle. The 'themes' directory will be created in bundles 'views' directory. For example, you have a bundle with name of ThemeBundle or FrontBundle. So you create a 'themes' directory in your ThemeBundle. Here is the directory hierarchy.
+            </p>
+            <pre>
+                <code class="php5">
+                    ThemeBundle->Resources->views->themes
+                </code>
+            </pre>
+            <blockquote>
+                <p> Your can create many themes in <span class="bold">'themes'</span> directory<p>
+            </blockquote>
+            <figure>
+                <img src="images/theme-hierarchy.jpg" />  
+                <figcaption>
+                    Themes hierarchy
+                </figcaption>
+            </figure>
+            <p>After creating themes directory, you needs to register your theme bundle in config.yml</p>
+            <pre>
+                <code class="php5">
+                    kamran_layout:
+                        _theme_bundle: '[Namespace]ThemeBundle'
+                </code>
+            </pre>
 
            
             
@@ -76,11 +108,12 @@
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../vendor/highlight/highlight.min.js"></script>
 <script src="../vendor/underscore-min.js"></script>
 <script src="../assets/scripts/static-data.js"></script>
 <script src="../assets/scripts/app.js"></script>
 <script>
-
+     hljs.initHighlightingOnLoad();
 
 
     (function ($) {
