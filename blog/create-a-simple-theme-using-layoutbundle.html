@@ -49,15 +49,17 @@
             </div>
 
 
+            <p>
+                When you are going to create your theme using LayoutBundle, then following questions will help you to understand <span class="bold">“how to create theme with LayoutBundle”</span>.
+            </p>
+
             <h2>Where all themes will be place?</h2>
            
             <p>
                 You can place your all theme in any bundle. The 'themes' directory will be created in bundles 'views' directory. For example, you have a bundle with name of ThemeBundle or FrontBundle. So you create a 'themes' directory in your ThemeBundle. Here is the directory hierarchy.
             </p>
             <pre>
-                <code class="php5">
-                    ThemeBundle->Resources->views->themes
-                </code>
+                <code class="php5">ThemeBundle->Resources->views->themes</code>
             </pre>
             <blockquote>
                 <p> Your can create many themes in <span class="bold">'themes'</span> directory<p>
@@ -70,22 +72,15 @@
             </figure>
             <p>After creating themes directory, you needs to register your theme bundle in config.yml</p>
             <pre>
-                <code class="php5">
-                    kamran_layout:
-                        _theme_bundle: '[Namespace]ThemeBundle'
-                </code>
+                <code class="php5">kamran_layout:
+    _theme_bundle: '[Namespace]ThemeBundle'</code>
             </pre>
             <p>
                 One of the easiest improvements we can implement with our pre content is syntax highlighting. It makes code easier to read and understand. In addition, it makes our design a bit more vibrant.
             </p>
-            <figure>
-                <img src="images/theme-child-template.jpg" />  
-                <figcaption>
-                    Themes child template
-                </figcaption>
-            </figure>
+            
 
-            <h2>Layout handler file(layouts.xml)</h2>
+            <h2>How to use layout handler file?</h2>
             <p>
                 This file is called theme configuration file. This file is responsible for handling theme layouts.You can define URL rules to themes and theme templates.
                 Themes regions are defined in this file.
@@ -95,6 +90,16 @@
                 layouts.xml file is theme configuration file which handles all theme related tasks
                 <p>
             </blockquote>
+            
+            <h2>How child templates used in LayoutBundle?</h2>
+            <p></p>
+            <figure>
+                <img src="images/theme-child-template.jpg" />  
+                <figcaption>
+                    Themes child template
+                </figcaption>
+            </figure>
+
             
             
             <!--@content-->

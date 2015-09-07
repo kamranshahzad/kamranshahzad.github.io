@@ -44,8 +44,8 @@
 
             <h2>Before We Start</h2>
             <p>
-            	How we compose a web page layout normally? There is no fixed rules to compose the web page layouts, but at most time we use layout pattern like, Header, Sidebar, Content, Footer. A web page is full of widgets or blocks, which have different functionality. Web Application have one or more than one pages, every page have its own layout composition. When we try to create a layout system, we must try that our layout system fit almost every layout composition/design if not, that may be extendable. 
-				If we try to create a layout system, It should be fit for every layout composition/design. If it is not possible, it may be extendable.
+            	How we compose a web page layout normally? There are no fixed rules to compose the web page layouts, most of the time we use layout pattern like, Header, Sidebar, Content, Footer. A web page is full of widgets or blocks, which have different functionality. Web Application have one or more than one pages, every page have its own layout composition. While creating a layout system, we aim to create a layout system that fits almost every layout composition/design. 
+				
             </p>
             <figure>
                 <img src="images/basic-web-page-layout.jpg" />  
@@ -67,7 +67,7 @@
             </p>
             <h2>Todo list</h2>
             <p>
-                These feature will include soon:
+                updates for next version:
                 <ul>
                     <li>Dynamic breadcrumbs</li>
                     <li>Customizeable menus/links</li>
@@ -92,9 +92,9 @@
             <h2>Why I need to develop LayoutBundle?</h2>
             <p>
                 <span class="bold">
-                    Symfony is very powerful php framework which have a strong template engine(twig). Doctrine ORM made symfony2 the best choice to develop larger web applications smoothly.
+                    Symfony is very powerful php framework with a strong template engine(twig). Doctrine ORM made symfony2 the best choice to develop larger web applications smoothly.
                 </span> 
-                During development in symfony, I want to develop a layout system/theming engine which helps frontend/backend developers to integrate UI with backend without any issue. This component could help developer is following ways:
+                During development in symfony, I want to develop a layout system/theming engine which helps frontend/backend developers to integrate UI with backend without any issue. This component will help developer in following ways:
                 <ul>
                     <li>More productive</li>
                     <li>One click theme change</li>
@@ -114,14 +114,14 @@
                     <li>SEO friendly</li>
                 </ul>
             </p>
-            <p>The Layout component is not completed yet, it is on first step. I am working on it when i got free. I want to share this component with all users for suggestion and help to write code.</p>
+            <p>This Layout component is not completed yet, it is still in initial stage. I want to share this component with all developers for suggestions and to help make it better.</p>
             <blockquote>
                 <p>Flexibility and productivity is the key point of LayoutBundle</p>
             </blockquote>
         
             <h2>Layouts inspirations!</h2>
             <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                During the development with frameworks a UI or design is hard to integrate. Mostly developers did not follow the design standards. So the final design is not fully compatible with backed. I always try to create small UI's myself to improve my front end skills. The best layout must have 3 following features, portable, customiseable, and extendable. Drupal has a very powerful UI layout structure, with usable building blocks. Magneto's layout structure is also powerful but its configuration is very complex. so my aim is to develop a layout system which will be easy to customize can be used with any frame work with simple one click install and yet simple to understand and configure .
             </p>
             <blockquote>
                 <p>I inspired theming of Drupal & Magneto. </p>
@@ -159,7 +159,21 @@
                     Basic template skeleton diagram for Layout Bundle.
                 </figcaption>
             </figure>
+            <h2>How Regions and blocks work?</h2>
+            <p>
+                Regions and bloks are main part of layoutbundle. LayoutBundle scans the specified bundles and find blocks for layout region. How this works? when you configure the layoutbundle you can see the option:
 
+
+
+
+This option helps layout bundle to find blocks from a specific namespace e. if you set vest namespace, layout bundle will scan all bundles from "Vest" namespace and collect the blocks to fit in template regions. Theme name space configuration option accepts one or more parameters(name spaces). 
+
+
+
+
+Every bundle which blocks we wish to use in our layout. It's name space must be added in configuration, multiple name spaces are added comma separated. Blocks configuration file performs main role to handle blocks attributes with layout system using block config file you can define block visibility rules and set many other options.
+                
+            </p>
 
             <!--@content-->
         </div>
