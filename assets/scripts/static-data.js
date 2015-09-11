@@ -105,7 +105,7 @@ var projects = [
         icon:'fa fa-newspaper-o',
         bgclass:'b-color-2',
         url: "https://github.com/kamranshahzad/XmlFormBundle",
-        description: 'This bundle helps to build forms quickly using xml config files' ,
+        description: 'This bundle helps to build forms quickly using xml configuration files in Symfony2',
         links:[
             {label:'github',url:'https://github.com/kamranshahzad/XmlFormBundle'},{label:'knpbundles',url:'#'}
         ]
