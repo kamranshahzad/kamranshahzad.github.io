@@ -97,6 +97,44 @@ h1, h2, h3, h4, h5, h6 {
     color:#fff
 }
 
+@media only screen and (max-width : 400px) {
+    .box-icon-container{
+        width:3.4em;
+        height:3.4em;
+        -webkit-border-radius:4em;
+        -moz-border-radius:4em;
+        border-radius:4em;
+        text-align: center;
+    }
+
+    .icon-item {
+        display:block;
+        font-size:1.8em;
+        line-height:1.8em;
+        color:#fff
+    }
+}
+
+
+
+@media only screen and (max-width : 340px) {
+    .box-icon-container{
+        width:3em;
+        height:3em;
+        -webkit-border-radius:4em;
+        -moz-border-radius:4em;
+        border-radius:4em;
+        text-align: center;
+    }
+
+    .icon-item {
+        display:block;
+        font-size:1.8em;
+        line-height:1.8em;
+        color:#fff
+    }
+}
+
 
 
 
