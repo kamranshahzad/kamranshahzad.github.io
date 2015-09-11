@@ -47,7 +47,7 @@ var footer_links = {
         {label:"",url:"https://www.facebook.com/profile.php?id=100008768106919&fref=ts",icon:"fa fa-facebook"},
         {label:"",url:"https://pk.linkedin.com/pub/kamran-shahzad/98/a16/47",icon:"fa fa-linkedin"},
         {label:"",url:"https://plus.google.com/+KamranShahzads",icon:"fa fa-google-plus"},
-        {label:"",url:"",icon:"fa fa-stack-overflow"},
+        {label:"",url:"http://stackoverflow.com/users/4730183/kamran-shahzad",icon:"fa fa-stack-overflow"},
         {label:"",url:"http://codepen.io/kamranshahzad/",icon:"fa fa-codepen"},
         {label:"",url:"https://github.com/kamranshahzad",icon:"fa fa-git"},
     ]
@@ -91,13 +91,33 @@ var article_list = {
 */
 var projects = [
     {
+        title:'LayoutBundle',
+        icon:'fa fa-desktop',
+        bgclass:'b-color-1',
+        url: "https://github.com/kamranshahzad/LayoutBundle",
+        description: 'LayoutBundle help users build layout with pace and provide support for fully customized multi-themes.' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/LayoutBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'XmlFormBundle',
+        icon:'fa fa-newspaper-o',
+        bgclass:'b-color-2',
+        url: "https://github.com/kamranshahzad/XmlFormBundle",
+        description: 'This bundle helps to build forms quickly using xml config files' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/XmlFormBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
+    {
         title:'TagsInput',
         icon:'fa fa-tag',
         bgclass:'b-color-3',
         url: "http://kamranshahzad.github.io/tagsinput/",
         description: 'Simple VanillaJS component for inputing tags.' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/TagsInput'},{label:'npmjs',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/TagsInput'},{label:'npmjs',url:'#'}
         ]
     },
     {
@@ -110,22 +130,60 @@ var projects = [
             {label:'github',url:'http://www.domjs.com'},{label:'npmjs',url:'http://knd/domjs'}
         ]
     },
-
+    {
+        title:'ContactsBundle',
+        icon:'fa fa-envelope',
+        bgclass:'b-color-5',
+        url: "https://github.com/kamranshahzad/ContactsBundle",
+        description: 'This bundle help to build forms quickly using xml config files' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/ContactsBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'TaxonomyBundle',
+        icon:'fa fa-sitemap',
+        bgclass:'b-color-6',
+        url: "https://github.com/kamranshahzad/TaxonomyBundle",
+        description: 'This bundle manages nested categories' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/TaxonomyBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
 ];
 
 
 
 
 var inline_projects = [
-    
+    {
+        title:'UtilBundle',
+        url: 'https://github.com/kamranshahzad/BaseJS',
+        description:'A helper bundle to build applications using symfony2',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/BaseJS'}, {label:'knpbundles',url:'#'}
+        ]
+    },
     {
         title:'BaseJS',
-        url: '#',
+        url: 'https://github.com/kamranshahzad/BaseJS',
         description:'This library provide basic VanillaJS functions',
         technology: 'Javascript',
         color: 'color-4',
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/BaseJS'}
+        ]
+    },
+    {
+        title:'ThemeBundle',
+        url: 'https://github.com/kamranshahzad/BaseJS',
+        description:'A sample theme for LayoutBundle',
+        technology: 'Symfony2',
+        color: 'color-2',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/BaseJS'}, {label:'knpbundles',url:'#'}
         ]
     },
     {
@@ -135,17 +193,17 @@ var inline_projects = [
         technology: 'Javascript',
         color: 'color-4',
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/BaseUtilJS'},{label:'npmjs',url:'#'}
         ]
     },
     {
         title:'DomJS',
-        url: '#',
+        url: 'https://github.com/kamranshahzad/DomJS',
         description:'A VanillaJS helper library for traversing DOM',
         technology: 'Javascript',
         color: 'color-4',
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'knpbundles',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/DomJS'}
         ]
     },
 ];
