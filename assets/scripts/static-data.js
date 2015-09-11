@@ -150,6 +150,26 @@ var projects = [
             {label:'github',url:'https://github.com/kamranshahzad/TaxonomyBundle'},{label:'knpbundles',url:'#'}
         ]
     },
+    {
+        title:'GroupChoiceListBundle',
+        icon:'fa fa-list-ul',
+        bgclass:'b-color-7',
+        url: "https://github.com/kamranshahzad/GroupChoiceListBundle",
+        description: 'Custom choice form type helps to display data in groups.' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/GroupChoiceListBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'CodesnippetBundle',
+        icon:'fa fa-code',
+        bgclass:'b-color-8',
+        url: "https://github.com/kamranshahzad/CodesnippetBundle",
+        description: 'Custom choice form type helps to display data in groups.' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/CodesnippetBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
 ];
 
 
@@ -181,9 +201,29 @@ var inline_projects = [
         url: 'https://github.com/kamranshahzad/BaseJS',
         description:'A sample theme for LayoutBundle',
         technology: 'Symfony2',
-        color: 'color-2',
+        color: 'color-1',
         links:[
             {label:'github',url:'https://github.com/kamranshahzad/BaseJS'}, {label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'LinkBundle',
+        url: 'https://github.com/kamranshahzad/LinkBundle',
+        description:'This bundle store usefull links',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/LinkBundle'}, {label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'OrganizationBundle',
+        url: 'https://github.com/kamranshahzad/OrganizationBundle',
+        description:'This bundle store orgonizations',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/OrganizationBundle'}, {label:'knpbundles',url:'#'}
         ]
     },
     {
