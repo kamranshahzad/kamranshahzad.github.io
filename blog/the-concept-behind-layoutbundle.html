@@ -129,7 +129,7 @@
             
             <h2>Layout Configurations</h2>
             <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                LayoutBundle provide the full support for multi-themes. Who can you apply the theme or themes? This bundle uses a central configuration file which is “layouts.xml”. This file is the main handler for themes. You can define you rule for specific theme or theme template in this file. This file have predefined pattern which is in detail explained in LayoutBundle doc file. In below diagram, you can see the basic flow of “layouts.xml” file.
             </p>
             <blockquote>
                 <p>Theme templates changed based on urls</p>
@@ -144,7 +144,26 @@
 
             <h2>How LayoutBundle services communicate?</h2>
             <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                The layoutbundle have many services which are performed different tasks. All services are sharing information across each others. Here are some step which led you to services communication flow:
+            </p>
+            <p>
+                1. <span class="bold">LayoutListener</span> : When request will be made then HTTPKenel events will invoked. LayoutBundle is using three HttpKernel events: 
+                    <ul>
+                        <li>"onKernelRequest()" here is the start point of layoutbundle. LayoutBundle will set the urls to 'LayoutThemeResolver' services and get parent template.</li>
+                        <li>"onKernelController()" here layoutbundle sets the twig variables to request attributes. </li>
+                        <li>"onKernelView()" here layoutbundle get template and twig variables attribute from request object and set into response.</li>
+                    </ul>
+                <br/>
+                2. <span class="bold">LayoutThemeResolver</span> : This service gave the information(current url) to 'LayoutBuilder' which recived from 'LayoutListener' and get parent template from it.
+                <br/>
+                3. <span class="bold">LayoutBuilder</span> : 'LayoutBuilder' sets current infomation to 'LayoutTemplateRenderer' service and get parent template that is found in layouts.xml file
+                <br/>
+                4. <span class="bold">LayoutTemplateRenderer</span> : This service is reponsible to build regions and block.
+                <br/>
+                5. <span class="bold">ThemeHelper</span> : 'ThemeHelper' provides 'regions' and 'inlineblocks'
+                <br/>
+                6. <span class="bold">ThemeExtention</span> : Twig helper
+                <br/>
             </p>
             <figure>
                 <img src="images/layoutbundle-services.jpg" />  
@@ -153,27 +172,22 @@
                 </figcaption>
             </figure>
 
+            <h2>How Regions and blocks work?</h2>
+            <p>
+                Regions and bloks are main part of layoutbundle. LayoutBundle scans the specified bundles and find blocks for layout region. How this works? when you configure the layoutbundle you can see the option:
+            This option helps layout bundle to find blocks from a specific namespace e. if you set vest namespace, layout bundle will scan all bundles from "Vest" namespace and collect the blocks to fit in template regions. Theme name space configuration option accepts one or more parameters(name spaces). 
+            Every bundle which blocks we wish to use in our layout. It's name space must be added in configuration, multiple name spaces are added comma separated. Blocks configuration file performs main role to handle blocks attributes with layout system using block config file you can define block visibility rules and set many other options.    
+            </p>
             <figure>
                 <img src="images/layoutbundle-skeleton.jpg" />  
                 <figcaption>
                     Basic template skeleton diagram for Layout Bundle.
                 </figcaption>
             </figure>
-            <h2>How Regions and blocks work?</h2>
-            <p>
-                Regions and bloks are main part of layoutbundle. LayoutBundle scans the specified bundles and find blocks for layout region. How this works? when you configure the layoutbundle you can see the option:
 
+            <h2>Finally, your thoughts</h2>
+            <p>This bundle is in initial stage and I want to add more features in this bundle that are in Todo list. But most important thing is your feedback about the bundle and your suggestion will be very useful for me and I will try to add useful suggested functionality in this bundle. So do'nt hesitate to drop me an email on “bleak.unseen@gmail.com”</p>
 
-
-
-This option helps layout bundle to find blocks from a specific namespace e. if you set vest namespace, layout bundle will scan all bundles from "Vest" namespace and collect the blocks to fit in template regions. Theme name space configuration option accepts one or more parameters(name spaces). 
-
-
-
-
-Every bundle which blocks we wish to use in our layout. It's name space must be added in configuration, multiple name spaces are added comma separated. Blocks configuration file performs main role to handle blocks attributes with layout system using block config file you can define block visibility rules and set many other options.
-                
-            </p>
 
             <!--@content-->
         </div>
