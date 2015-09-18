@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> TagsInput | VanillaJS </title>
+    <title> Single line form | VanillaJS </title>
     <meta name="keywords" content="sortable, reorder, list, javascript, html5, drag and drop, dnd, animation, groups, angular, ng-sortable, react, mixin, effects, rubaxa"/>
     <meta name="description" content="Sortable - is a minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React and any CSS library, e.g. Bootstrap."/>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" >
-    <link rel="stylesheet" type="text/css" href="css/tags-input.css" >
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
     <style>
     </style>
 </head>
@@ -37,17 +37,17 @@
 <div class="top-container">
 
     <div class="container">
-            <h3>Tags Input</h3>
+            <h3>Single Line Form</h3>
             <div class="row">
                 <div class="col-md-12">
-                    <p>A tags input is an input box that automatically creates tags. Tags Input handles all the data, your form just sees a comma-delimited list of tags </p>
+                    <p>Stylish one field form with multi-step and progress bar.</p>
                     <div class="button-container">
                         &nbsp;&nbsp;
                         <a href="https://github.com/kamranshahzad/TagsInput/archive/master.zip" class="btn btn-primary btn-sm">
                             Downloads (.zip)
                         </a>
                         &nbsp;
-                        <a href="https://github.com/kamranshahzad/TagsInput" class="btn btn-success btn-sm">
+                        <a href="#" class="btn btn-success btn-sm">
                             <i class="fa fa-github"></i>
                             View on github
                         </a>
@@ -103,18 +103,36 @@
 
 <div class="container content-container">
 
-    <div class="row patch">
-        <div class="col-md-12">
+    <br/><br/>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
             <!--content-->
-            <h2>Try it yourself!</h2>
-            <input type="text" id="" value="one,two,three" class="form-control" style="display:none;" />
-            <div class="tags-container" id="tagsContainer" >
-                <input type="text" id="tag_txt" placeholder="" style="width: 3em ! important;" size="1">
-            </div> <!--@tags-container-->
-
+            <form id="abc" class="simform">
+                <div class="label-container">
+                    <label for="txt_item">What's your name?</label>
+                </div>
+                <div class="field-container">
+                    <input type="text" name="txt_item" id="txt_item">
+                </div>
+                <div class="controls">
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                    <div class="progress"></div>
+                    <span class="number">
+                        <span class="number-current">2</span>
+                        <span class="number-total">3</span>
+                    </span>
+                    <span class="error-message">Please answer before continuing</span>
+                </div>
+            </form>
+            <div class="final-message" id="final-message" >Thank you! We'll be in touch.</div>
             <!--@content-->
         </div>
+        <div class="col-md-1"></div>
     </div>
+    <br/><br/>
+
 
     <div class="row patch">
         <div class="col-md-12">
@@ -122,11 +140,15 @@
             <h2>How to use?</h2>
     <pre>
         <code class="javascript">
-            function person(){
-                return "Hello";
-            }
-            options = {};
-            var obj = new TagsInput(options);
+            var options = {
+              fields : [
+                  {label:"What's your name?",name:'name'},
+                  {label:"Whats your project?",name:'project'},
+                  {label:"Whats your email?",name:'email'},
+              ],
+              submit_message : "Your Information successfully sanded."
+            };
+            new oneLineForm('abc',options);
         </code>
     </pre>
 
@@ -134,179 +156,6 @@
         </div>
     </div>
 
-
-    <div class="row patch">
-        <div class="col-md-12">
-            <!--content-->
-            <h2>Options</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Options</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>tagClass</code></td>
-                        <td>
-                            Classname for the tags, or a function returning a classname
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>submitKeys</code></td>
-                        <td>
-                            Array of keycodes which will add a tag when typing in the input. (default: [13, 188], which are ENTER and comma)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>maxTags</code></td>
-                        <td>
-                            When set, no more than the given number of tags are allowed to add (default: undefined). When maxTags is reached, a class 'bootstrap-tagsinput-max' is placed on the tagsinput element.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>maxChars</code></td>
-                        <td>
-                            Defines the maximum length of a single tag. (default: undefined)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>trimValue</code></td>
-                        <td>
-                            When true, automatically removes all whitespace around tags. (default: false)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>allowDuplicates</code></td>
-                        <td>
-                            When true, the same tag can be added multiple times. (default: false)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>onTagExists</code></td>
-                        <td>
-                            Function invoked when trying to add an item which allready exists. By default, the existing tag hides and fades in.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--@content-->
-        </div>
-    </div>
-
-    <div class="row patch">
-        <div class="col-md-12">
-            <!--content-->
-            <h2>Methods</h2>
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Options</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><code>add</code></td>
-                    <td>
-                        Adds a tag
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>remove</code></td>
-                    <td>
-                        Adds a tag
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>removeAll</code></td>
-                    <td>
-                        <pre><code data-language="html" class="rainbow">var $elt = $('input').tagsinput('input');</code></pre>
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>refresh</code></td>
-                    <td>
-                        Refreshes the tags input UI. This might be usefull when you're adding objects as tags. When an object's text changes, you'll have to refresh to update the matching tag's text.
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>destroy</code></td>
-                    <td>
-                        Removes tagsinput behaviour
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <!--@content-->
-        </div>
-    </div>
-
-    <div class="row patch">
-        <div class="col-md-12">
-            <!--content-->
-            <h2>Events</h2>
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Options</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><code>preAdded</code></td>
-                    <td>
-                        Triggered just before an item gets added. Example:
-        <pre><code data-language="javascript" class="rainbow">
-        $('input').on('itemAdded', function(event) {
-            // event.item: contains the item
-        });
-        </code></pre>
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>Added</code></td>
-                    <td>
-                        Triggered just after an item got added. Example:
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>preRemoved</code></td>
-                    <td>
-                        Triggered just before an item gets removed. Example:
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>Removed</code></td>
-                    <td>
-                        Triggered just after an item got removed. Example:
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>onFilter</code></td>
-                    <td>
-                        Removes tagsinput behaviour
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <!--@content-->
-        </div>
-    </div>
-
-    <div class="row patch">
-        <div class="col-md-12">
-            <!--content-->
-            <h2>To-do list</h2>
-            <ul>
-                <li>Auto Search</li>
-                <li>Validations</li>
-            </ul>
-            <!--@content-->
-        </div>
-    </div>
 
 
     <div class="row patch">
@@ -341,9 +190,9 @@
 <script src="../vendor/underscore-min.js"></script>
 <script src="../assets/scripts/static-data.js"></script>
 <script src="../assets/scripts/app.js"></script>
-<script src="scripts/tags-input.js"></script>
+<script src="scripts/one-line-form.js"></script>
 <script>
-    hljs.initHighlightingOnLoad();
+    //hljs.initHighlightingOnLoad();
 
 
     (function ($) {
@@ -359,16 +208,14 @@
 
         //Project Examples
         var options = {
-            _list : ['rawalpindi','lahore','karachi','islamabad','attock','gujarkhan','rawat'],
-            onAdded : function(evt){
-                //_log("===> "+ evt.tag_text);
-            }/*,
-             onTransform : function(evt){
-             evt.tag_text = evt.tag_text.toUpperCase();
-             }*/
+          fields : [
+              {label:"What's your name?",name:'name'},
+              {label:"Whats your project?",name:'project'},
+              {label:"Whats your email?",name:'email'},
+          ],
+          submit_message : "Your Information successfully sanded."
         };
-        var obj = new TagsInput(options);
-
+        new oneLineForm('abc',options);
 
 
 

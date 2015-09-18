@@ -124,10 +124,10 @@ var projects = [
         title:'Single Line Form',
         icon:'fa fa-square-o',
         bgclass:'b-color-4',
-        url: "#",
+        url: "http://kamranshahzad.github.io/single-line-form/",
         description: 'Stylish one field form with multi-step and progress bar.' ,
         links:[
-            {label:'github',url:'http://www.domjs.com'},{label:'npmjs',url:'http://knd/domjs'}
+            {label:'github',url:'https://github.com/kamranshahzad/single-line-form'},{label:'npmjs',url:'#'}
         ]
     },
     {
