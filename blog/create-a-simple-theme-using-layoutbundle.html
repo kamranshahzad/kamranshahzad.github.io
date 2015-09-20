@@ -51,19 +51,19 @@
 
             <h2>Before create a theme, needs some explanations!</h2>
             <p>
-                When you are going to create your theme using LayoutBundle, then following questions will help you to understand <span class="bold">“how to create theme with LayoutBundle”</span>.
+            When you start creating theme using layoutBundle, following questions will help you understand <span class="bold">“how to create theme with LayoutBundle”</span>.
                 <ul>
-                    <li>Where all themes will be place?</li>
+                    <li>Where all themes will be placed?</li>
                     <li>How to use layout handler file?</li>
-                    <li>How child templates used in LayoutBundle?</li>
+                    <li>How to use child templates?</li>
                 </ul>
             </p>
 
 
-            <h3>Where all themes will be place?</h3>
+            <h3>Where all themes will be placed?</h3>
            
             <p>
-                You can place your all theme in any bundle. The 'themes' directory will be created in bundles 'views' directory. For example, you have a bundle with name of ThemeBundle or FrontBundle. So you create a 'themes' directory in your ThemeBundle. Here is the directory hierarchy.
+                You can place your all theme in any bundle. The 'themes' directory will be created in bundles 'views' directory. For example, you have a bundle with name of ThemeBundle or FrontBundle, create a 'themes' directory in your ThemeBundle. Here is the directory hierarchy.
             </p>
             <pre>
                 <code class="php5">ThemeBundle->Resources->views->themes</code>
@@ -77,20 +77,20 @@
                     Themes directory hierarchy
                 </figcaption>
             </figure>
-            <p>After creating themes directory, you needs to register your theme bundle in config.yml</p>
+            <p>After creating themes directory, register your theme bundle in config.yml</p>
             <pre>
                 <code class="php5">kamran_layout:
     _theme_bundle: 'YourBundleName'  // bundle name with namespaces</code>
             </pre>
             <p>
-                One of the easiest improvements we can implement with our pre content is syntax highlighting. It makes code easier to read and understand. In addition, it makes our design a bit more vibrant.
+                One of the easiest improvements we can implement with our pre content is syntax highlighting. It makes code easier to read and understand. In addition, it will make our design a bit more vibrant.
             </p>
             
 
             <h3>How to use layout handler file?</h3>
             <p>
-                This file is called theme configuration file. This file is responsible for handling theme layouts.You can define URL rules to themes and theme templates.
-                Themes regions are defined in this file.
+                This file is called theme configuration file and is responsible for handling theme layouts.You can define URL rules to themes and theme templates.
+                Themes regions are also defined in this file.
             </p>
             <blockquote>
                 <p> 
@@ -117,7 +117,7 @@
                 <code class="php5">$ composer require kamran/layout-bundle dev-master</code>
             </pre>
             <h3>2. &nbsp; Choose a bundle, where you placed themes</h3>
-            <p>This bundle provides the flexibility to choose you to set specific bundle for theme placement. So you choose it wisely, like sometime I used a FrontBundle in project. And I put all front page/index page related items in that bundle. So I choose that bundle to placement for my themes.</p>
+            <p>This bundle provides the flexibility to choose any bundle for theme placement. Choose wisely, like sometime we use a FrontBundle in project, and put all front page/index page related items in that bundle. So we recommend that bundle for placment of theme.</p>
             <p>&nbsp;  So I have created the 'themes' directory in my FrontBundle. Here is the directory path.</p>
             <pre>
                 <code class="php5">FrontBundle->Resources->views->themes</code>
@@ -141,11 +141,11 @@
 
             <h3>6. &nbsp; Create a theme templates</h3>
             <p>In your theme, you can create parent templates for different type of content which have different layouts.</p>    
-            <p>For example, I create a template "front.html.twig". This template will use for "Front Page"</p>
+            <p>For example, create a template "front.html.twig". This template will be used for "Front Page"</p>
             <pre>
                 <code class="php5">FrontBundle->Resources->views->themes->bluemoon->front.html.twig</code>
             </pre>
-            <p>You create more templates in theme accoding to your needs</p>
+            <p>You can create more templates in theme according to your needs</p>
 
             <h3>7. &nbsp; Add your theme name in "layouts.xml" file</h3>
             <p>Here is the basic pattern of "layouts.xml" file</p>
@@ -156,7 +156,7 @@
                 </figcaption>
             </figure>
             <h3>8. &nbsp; Add templates in theme configuration file(layouts.xml)</h3>
-            <p>Now I added some theme templates in layouts.xml file</p>
+            <p>Now we have added some theme templates in layouts.xml file</p>
             <figure>
                 <img src="images/bluemoon-theme-layout.jpg" />  
                 <figcaption>

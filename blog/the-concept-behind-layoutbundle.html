@@ -129,7 +129,11 @@
             
             <h2>Layout Configurations</h2>
             <p>
-                LayoutBundle provide the full support for multi-themes. Who can you apply the theme or themes? This bundle uses a central configuration file which is “layouts.xml”. This file is the main handler for themes. You can define you rule for specific theme or theme template in this file. This file have predefined pattern which is in detail explained in LayoutBundle doc file. In below diagram, you can see the basic flow of “layouts.xml” file.
+                LayoutBundle provide full support for multi-themes. How can you apply the theme or themes? 
+                This bundle uses a central configuration file which is “layouts.xml”. This file is the main 
+                handler for themes. You can define rule for specific theme or theme template in this file.
+                 This file have predefined pattern which is in detail explained in LayoutBundle doc file. 
+                 In below diagram, you can see the basic flow of “layouts.xml” file.
             </p>
             <blockquote>
                 <p>Theme templates changed based on urls</p>
@@ -144,17 +148,18 @@
 
             <h2>How LayoutBundle services communicate?</h2>
             <p>
-                The layoutbundle have many services which are performed different tasks. All services are sharing information across each others. Here are some step which led you to services communication flow:
+                The layoutbundle have many services which performs different tasks. All services are sharing 
+                information. Here are some step which will guide you about services flow:
             </p>
             <p>
-                1. <span class="bold">LayoutListener</span> : When request will be made then HTTPKenel events will invoked. LayoutBundle is using three HttpKernel events: 
+                1. <span class="bold">LayoutListener</span> : When a request will be made it will invoke HTTPKenel events. LayoutBundle is using three HttpKernel events: 
                     <ul>
                         <li>"onKernelRequest()" here is the start point of layoutbundle. LayoutBundle will set the urls to 'LayoutThemeResolver' services and get parent template.</li>
                         <li>"onKernelController()" here layoutbundle sets the twig variables to request attributes. </li>
                         <li>"onKernelView()" here layoutbundle get template and twig variables attribute from request object and set into response.</li>
                     </ul>
                 <br/>
-                2. <span class="bold">LayoutThemeResolver</span> : This service gave the information(current url) to 'LayoutBuilder' which recived from 'LayoutListener' and get parent template from it.
+                2. <span class="bold">LayoutThemeResolver</span> : This service gives the information(current url) to 'LayoutBuilder' and returns parent template from it.
                 <br/>
                 3. <span class="bold">LayoutBuilder</span> : 'LayoutBuilder' sets current infomation to 'LayoutTemplateRenderer' service and get parent template that is found in layouts.xml file
                 <br/>
@@ -186,7 +191,9 @@
             </figure>
 
             <h2>Finally, your thoughts</h2>
-            <p>This bundle is in initial stage and I want to add more features in this bundle that are in Todo list. But most important thing is your feedback about the bundle and your suggestion will be very useful for me and I will try to add useful suggested functionality in this bundle. So do'nt hesitate to drop me an email on “bleak.unseen@gmail.com”</p>
+            <p>This bundle is in initial stage and we want to add more features. We value your precious feedback
+            and will review/implement suggestions from you. So please take time and write to us
+            “bleak.unseen@gmail.com”</p>
 
 
             <!--@content-->
