@@ -111,9 +111,19 @@ var projects = [
         ]
     },
     {
+        title:'PassbookBundle',
+        icon:'fa fa-mobile',
+        bgclass:'b-color-3',
+        url: "https://github.com/kamranshahzad/PassbookBundle",
+        description: 'Rest API for building passes & coupons',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/PassbookBundle'},{label:'knpbundles',url:'#'}
+        ]
+    },
+    {
         title:'TagsInput',
         icon:'fa fa-tag',
-        bgclass:'b-color-3',
+        bgclass:'b-color-4',
         url: "http://kamranshahzad.github.io/tagsinput/",
         description: 'Simple VanillaJS component for inputing tags.' ,
         links:[
@@ -123,7 +133,7 @@ var projects = [
     {
         title:'Single Line Form',
         icon:'fa fa-square-o',
-        bgclass:'b-color-4',
+        bgclass:'b-color-5',
         url: "http://kamranshahzad.github.io/single-line-form/",
         description: 'Stylish one field form with multi-step and progress bar.' ,
         links:[
@@ -133,7 +143,7 @@ var projects = [
     {
         title:'ContactsBundle',
         icon:'fa fa-envelope',
-        bgclass:'b-color-5',
+        bgclass:'b-color-6',
         url: "https://github.com/kamranshahzad/ContactsBundle",
         description: 'This bundle help to build forms quickly using xml config files' ,
         links:[
@@ -143,7 +153,7 @@ var projects = [
     {
         title:'TaxonomyBundle',
         icon:'fa fa-sitemap',
-        bgclass:'b-color-6',
+        bgclass:'b-color-7',
         url: "https://github.com/kamranshahzad/TaxonomyBundle",
         description: 'This bundle manages nested categories' ,
         links:[
@@ -153,7 +163,7 @@ var projects = [
     {
         title:'GroupChoiceListBundle',
         icon:'fa fa-list-ul',
-        bgclass:'b-color-7',
+        bgclass:'b-color-8',
         url: "https://github.com/kamranshahzad/GroupChoiceListBundle",
         description: 'Custom choice form type helps to display data in groups.' ,
         links:[
@@ -163,7 +173,7 @@ var projects = [
     {
         title:'CodesnippetBundle',
         icon:'fa fa-code',
-        bgclass:'b-color-8',
+        bgclass:'b-color-9',
         url: "https://github.com/kamranshahzad/CodesnippetBundle",
         description: 'Custom choice form type helps to display data in groups.' ,
         links:[
