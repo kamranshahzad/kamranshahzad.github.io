@@ -256,4 +256,35 @@ var inline_projects = [
             {label:'github',url:'https://github.com/kamranshahzad/DomJS'}
         ]
     },
+    {
+        title:'Passbook UI',
+        url: 'https://github.com/kamranshahzad/passbook-ui',
+        description:'A Wordpress plugin for passbook coupons & passes management',
+        technology: 'Wordpress',
+        color: 'color-2',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/passbook-ui'},
+            {label:'wp',url:'#'}
+        ]
+    },
+    {
+        title:'JSForms',
+        url: 'https://github.com/kamranshahzad/FormJS',
+        description:'A javascript library for building dynamic forms',
+        technology: 'Javascript',
+        color: 'color-4',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/FormJS'}
+        ]
+    },
+    {
+        title:'BackboneForms',
+        url: 'https://github.com/kamranshahzad/backbone-forms',
+        description:'A backbone helpers for building dynamic forms',
+        technology: 'BackboneJS',
+        color: 'color-3',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/backbone-forms'}
+        ]
+    },
 ];
