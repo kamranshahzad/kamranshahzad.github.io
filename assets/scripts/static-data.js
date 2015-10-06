@@ -180,6 +180,16 @@ var projects = [
             {label:'github',url:'https://github.com/kamranshahzad/CodesnippetBundle'},{label:'knpbundles',url:'#'}
         ]
     },
+    {
+        title:'Passbook UI',
+        icon:'fa fa-newspaper-o',
+        bgclass:'b-color-10',
+        url: "https://github.com/kamranshahzad/passbook-ui",
+        description: 'Custom choice form type helps to display data in groups.' ,
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/passbook-ui'}
+        ]
+    },
 ];
 
 
@@ -254,17 +264,6 @@ var inline_projects = [
         color: 'color-4',
         links:[
             {label:'github',url:'https://github.com/kamranshahzad/DomJS'}
-        ]
-    },
-    {
-        title:'Passbook UI',
-        url: 'https://github.com/kamranshahzad/passbook-ui',
-        description:'A Wordpress plugin for passbook coupons & passes management',
-        technology: 'Wordpress',
-        color: 'color-2',
-        links:[
-            {label:'github',url:'https://github.com/kamranshahzad/passbook-ui'},
-            {label:'wp',url:'#'}
         ]
     },
     {
