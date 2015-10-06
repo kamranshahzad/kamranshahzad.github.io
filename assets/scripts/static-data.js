@@ -185,7 +185,7 @@ var projects = [
         icon:'fa fa-newspaper-o',
         bgclass:'b-color-10',
         url: "https://github.com/kamranshahzad/passbook-ui",
-        description: 'Custom choice form type helps to display data in groups.' ,
+        description: 'A Wordpress plugin for passbook coupons & passes management' ,
         links:[
             {label:'github',url:'https://github.com/kamranshahzad/passbook-ui'}
         ]
