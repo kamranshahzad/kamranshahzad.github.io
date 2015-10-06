@@ -97,7 +97,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/LayoutBundle",
         description: 'LayoutBundle help users build layout with pace and provide support for fully customized multi-themes.' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/LayoutBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/LayoutBundle'},{label:'knpbundles',url:'http://knpbundles.com/kamranshahzad/LayoutBundle'}
         ]
     },
     {
@@ -107,7 +107,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/XmlFormBundle",
         description: 'This bundle helps to build forms quickly using xml configuration files in Symfony2',
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/XmlFormBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/XmlFormBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/XmlFormBundle'}
         ]
     },
     {
@@ -117,7 +117,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/PassbookBundle",
         description: 'Rest API for building passes & coupons',
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/PassbookBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/PassbookBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/PassbookBundle'}
         ]
     },
     {
@@ -147,7 +147,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/ContactsBundle",
         description: 'This bundle help to build forms quickly using xml config files' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/ContactsBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/ContactsBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/ContactsBundle'}
         ]
     },
     {
@@ -157,7 +157,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/TaxonomyBundle",
         description: 'This bundle manages nested categories' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/TaxonomyBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/TaxonomyBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/TaxonomyBundle'}
         ]
     },
     {
@@ -167,7 +167,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/GroupChoiceListBundle",
         description: 'Custom choice form type helps to display data in groups.' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/GroupChoiceListBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/GroupChoiceListBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/GroupChoiceListBundle'}
         ]
     },
     {
@@ -177,7 +177,7 @@ var projects = [
         url: "https://github.com/kamranshahzad/CodesnippetBundle",
         description: 'Custom choice form type helps to display data in groups.' ,
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/CodesnippetBundle'},{label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/CodesnippetBundle'},{label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/CodesnippetBundle'}
         ]
     },
     {
@@ -196,6 +196,26 @@ var projects = [
 
 
 var inline_projects = [
+    {
+        title:'CodeMirrorBundle',
+        url: 'https://github.com/kamranshahzad/code-mirror-bundle',
+        description:'A helper bundle for create codemirror code editor field.',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/code-mirror-bundle'}, {label:'knpbundles',url:'#'}
+        ]
+    },
+    {
+        title:'TagsBundle',
+        url: 'https://github.com/kamranshahzad/TagsBundle',
+        description:'Tags fields',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/TagsBundle'}, {label:'knpbundles',url:'#'}
+        ]
+    },
     {
         title:'UtilBundle',
         url: 'https://github.com/kamranshahzad/BaseJS',
@@ -243,7 +263,7 @@ var inline_projects = [
         technology: 'Symfony2',
         color: 'color-1',
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/OrganizationBundle'}, {label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/OrganizationBundle'}, {label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/OrganizationBundle'}
         ]
     },
     {
