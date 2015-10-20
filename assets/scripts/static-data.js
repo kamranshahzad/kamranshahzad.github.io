@@ -197,6 +197,16 @@ var projects = [
 
 var inline_projects = [
     {
+        title:'UserBundle',
+        url: 'https://github.com/kamranshahzad/UserBundle',
+        description:'A complete user management/registration/login system',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/UserBundle'}, {label:'knpbundles',url:'#'}
+        ]
+    },
+    {
         title:'CodeMirrorBundle',
         url: 'https://github.com/kamranshahzad/code-mirror-bundle',
         description:'A helper bundle for create codemirror code editor field.',
@@ -218,12 +228,12 @@ var inline_projects = [
     },
     {
         title:'UtilBundle',
-        url: 'https://github.com/kamranshahzad/BaseJS',
+        url: 'https://github.com/kamranshahzad/UtilBundle',
         description:'A helper bundle to build applications using symfony2',
         technology: 'Symfony2',
         color: 'color-1',
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/BaseJS'}, {label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/UtilBundle'}, {label:'knpbundles',url:'http://www.knpbundles.com/kamranshahzad/UtilBundle'}
         ]
     },
     {
@@ -304,6 +314,16 @@ var inline_projects = [
         color: 'color-3',
         links:[
             {label:'github',url:'https://github.com/kamranshahzad/backbone-forms'}
+        ]
+    },
+    {
+        title:'SettingBundle',
+        url: 'https://github.com/kamranshahzad/SettingBundle',
+        description:'Bundles setting helper forms',
+        technology: 'Symfony2',
+        color: 'color-1',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/SettingBundle'}, {label:'knpbundles',url:'#'}
         ]
     },
 ];
