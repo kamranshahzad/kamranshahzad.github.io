@@ -323,7 +323,17 @@ var inline_projects = [
         technology: 'Symfony2',
         color: 'color-1',
         links:[
-            {label:'github',url:'https://github.com/kamranshahzad/SettingBundle'}, {label:'knpbundles',url:'#'}
+            {label:'github',url:'https://github.com/kamranshahzad/SettingBundle'}, {label:'knpbundles',url:'http://knpbundles.com/kamranshahzad/SettingBundle'}
+        ]
+    },
+    {
+        title:'File Input',
+        url: 'https://github.com/kamranshahzad/file-input',
+        description:'Standardizes the file input field for all browsers',
+        technology: 'JQuery',
+        color: 'color-2',
+        links:[
+            {label:'github',url:'https://github.com/kamranshahzad/file-input'}
         ]
     },
 ];
