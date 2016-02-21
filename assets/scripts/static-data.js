@@ -26,7 +26,7 @@ var contact_me = {
 
 var header_data = {
         title: "kamranshahzad.github.io",
-        tagline: "Sr. Software Architect/Full Stack Web Developer",
+        tagline: "Sr. Software Architect",
         links:[
             {label:'Home',url:'http://kamranshahzad.github.io'},
             {label:'Projects',url:'http://kamranshahzad.github.io/#projectsContainer'},
