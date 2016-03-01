@@ -1,0 +1,89 @@
+
+
+
+   		body {
+   			/*font-size: 12px;*/
+   		}
+
+
+
+   	  h1 { font-size: 1.7em;}
+   	  h2 { font-size: 1.1em; font-weight: 600;}
+   	  	
+      li { list-style: none; margin: 0px; padding:0;}
+      li { margin-top: 5px;}
+
+      /*.icon-wrapper{display:table;float:left}
+      .circle-yes{border-radius:50%;background-clip:padding-box;background-color:#333;color:#fff;text-align:center}
+      .circle-yes{margin-top:0}
+      .circle-yes{border-radius:75px;border-width:1px;border-style:solid;background-color:#333;color:#fff;text-align:center;margin-top:2px}
+      .circle-yes{width:70px;height:70px;line-height:70px}*/
+
+      .box-icon {
+        border-radius:4px;
+        background-color: #236d9c;
+        padding: 2px 4px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .linux-icon {
+        border-radius:4px;
+        background-color: #c9c9c9;
+        padding: 2px 4px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+
+      .skills {
+          padding: 10px;
+          border-radius:2px;
+          margin-top: 20px;
+      }
+
+      .language-container {
+      		background-color: #48aceb;
+      }
+
+      .language-container li {
+      		color:#ffffff;
+      }
+
+
+      .linux-container {
+          background-color: #eeeeee;
+      }
+
+      .security-container {
+          background-color: #ffb3b3; 
+      }
+
+    .text-wrappers {
+    	padding: 20px;
+    }  
+
+    .text-wrappers li {
+    	color: #000000 !important;
+    	font-size: 15px;
+    }
+
+    .icon-wrapper {
+    	display: table;
+    	float: left;
+	}
+
+	.circle-yes{
+		border-radius:50%;
+		background-clip:padding-box;
+		/*background-color:#333;*/
+		color:#fff;
+		text-align:center;
+		background-color:#000000;font-size:11px;height:20px;width:20px;margin-right:9.1px;
+		padding-top: 2px;
+	}
+
+  .others-container h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
