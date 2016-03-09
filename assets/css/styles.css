@@ -417,3 +417,10 @@ img { margin:20px auto;display: block;max-width:100%;height:auto;}
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 }
+
+
+
+.view_more{
+    font-size: 13px;
+    font-weight: 400;
+}
