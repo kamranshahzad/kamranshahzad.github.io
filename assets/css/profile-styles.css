@@ -21,7 +21,7 @@
 
       .box-icon {
         border-radius:4px;
-        background-color: #236d9c;
+        background-color: #16611B;
         padding: 2px 4px;
         font-size: 12px;
         font-weight: 500;
@@ -43,8 +43,21 @@
       }
 
       .language-container {
-      		background-color: #75b6df;
+      		background-color: #3E9A44;
       }
+
+      .language-container h2{
+          font-size: 1.2em; 
+          font-weight: 600;
+          margin-bottom: 20px;
+          color:#ffffff;
+      }
+
+      .language-container .points {
+          color:#DFF0D8;
+          font-size:16px;
+      }
+
 
       .language-container li {
       		color:#ffffff;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Product Overview | Smart Listings </title>
+    <meta name="keywords" content="javascript"/>
+    <meta name="description" content="JavaScript developer"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/product-overview-styles.css" >
+</head>
+<body>
+
+<header id="headerView"></header>
+
+<br/><br/>
+
+<div class="container product-page">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+          
+        <h1>Smart Listings</h1>
+
+        <br/>
+        <div class="alert alert-success" role="alert">
+            This page show a product related functionality and lifecyle only. The real component will placed on a marketplace for sell soon.
+        </div>
+
+        <h2>Background</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <h2>Target Market</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <h2>Inspirational functionalities</h2>
+        <p>
+            Here is some links for case study.
+            <ul>
+                <li>
+                    <a href="http://www.amazon.com/PC-Parts-Components/b/ref=sd_allcat_components?ie=UTF8&node=193870011">Amazon catalog</a>
+                </li>
+                <li>
+                    <a href="http://www.pakwheels.com/used-cars/search/-/">PakWheels</a>
+                </li>
+            </ul>
+        </p>
+
+
+
+        
+
+
+
+        <br/><br/>
+      </div><!--@col-->
+    </div><!--@row-->
+</div><!--@container-->        
+<br/>
+
+<footer id="footerLinksContainer"> </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="vendor/underscore-min.js"></script>
+<script src="vendor/tooltip.js"></script>
+<script src="assets/scripts/static-data.js"></script>
+<script src="assets/scripts/app.js"></script>
+<script>
+
+(function ($) {
+
+        $.get('templates/headerView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#headerView').append(tplHtml(header_data));
+        });
+
+        $.get('templates/linksView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#footerLinksContainer').append(tplHtml(footer_links));
+        });
+
+
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+    } (jQuery));
+
+
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63308210-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

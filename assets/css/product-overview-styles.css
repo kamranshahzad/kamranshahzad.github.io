@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
+	h1 {
+		font-size: 1.8em;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 1.1em;
+		font-weight: 600;
+		margin: 20px 0 10px;
+		color:#ff6600;
+	}
+
+	h3 {
+
+	}
+
+	.alert { }
+
+	.product-page {
+		font-family: 'Roboto',sans-serif;
+	}
