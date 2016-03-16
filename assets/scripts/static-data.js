@@ -67,16 +67,17 @@ var article_note = {note:"I have written articles for my open source components.
 
 
 var articals = [
-    {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
     {title:"Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
+    {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
 ];
 
 
 
 var article_list = {
     articles : [
+        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
+        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
         {date: '23 August,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
-        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"}
     ]
 };
 
