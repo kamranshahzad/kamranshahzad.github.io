@@ -197,3 +197,11 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 
 .breadcrumb { font-size: 11px !important;}
 .date {  margin:5px 0 25px; font-size: 14px;color:#080808;}
+
+
+.blog-container hr, .blog-products-page hr {
+    color: #f5f5f5;
+    background: #f5f5f5;
+    width: 100%;
+    margin: 0px !important;
+}
