@@ -70,8 +70,8 @@ var articals = [
     {title:"First Step: The Future (Part-4)",url:"#"},
     {title:"First Step: Life Cycle, Code and Performance of “SmartListings” (Part-3)",url:"#"},
     {title:"First Step: An Overview first Commercial Component  (Part-2)",url:"#"},
-    {title:"First Step: Why Component Development?  (Part-1)",url:"#"},
-    {title:"Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
+    {title:"First Step: Why Component Development?  (Part-1)",url:"http://kamranshahzad.github.io/blog/first-step_why-component-development-part-1.html"},
+    //{title:"Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
    // {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
 ];
 
@@ -82,7 +82,7 @@ var article_list = {
         {date: '17 March,2016',title : "First Step: The Future (Part-4)",url:"#"},
         {date: '16 March,2016',title : "First Step: Life Cycle, Code and Performance of “SmartListings” (Part-3)",url:"#"},
         {date: '15 March,2016',title : "First Step: An Overview first Commercial Component  (Part-2)",url:"#"},
-        {date: '14 March,2016',title : "First Step: Why Component Development?  (Part-1)",url:"#"},
+        {date: '14 March,2016',title : "First Step: Why Component Development?  (Part-1)",url:"http://kamranshahzad.github.io/blog/first-step_why-component-development-part-1.html"},
         {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
         {date: '23 August,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
     ]

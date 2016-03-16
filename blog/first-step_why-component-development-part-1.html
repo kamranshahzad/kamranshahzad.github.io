@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Blog | First Step: Why Component Development?  (Part-1) </title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/all-styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/blog-product-styles.css" >
+    <style>
+    </style>
+</head>
+<body>
+
+
+
+<header id="headerView"></header>
+
+
+
+<div class="container">
+
+
+    <div class="row blog-container" id="blogContainer">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <!--content-->
+            <ol class="breadcrumb">
+                <li><a href="http://kamranshahzad.github.io/">Home</a></li>
+                <li><a href="http://kamranshahzad.github.io/blog/">Blog</a></li>
+                <li class="active">First Step: Why Component Development?  (Part-1)</li>
+            </ol>
+
+            <h1>First Step: Why Component Development?  (Part-1)</h1>
+            <hr/>
+            <div class="date">
+                <i class="fa fa-clock-o"></i> &nbsp; March 14,2016
+            </div>
+
+
+
+
+
+            <!--@content-->
+        </div>
+
+        
+
+
+
+    </div><!--@article-container -->
+
+    <br/><br/><br/><br/>
+
+
+
+    <br/><br/>
+</div><!--@container-fluid-->
+
+
+<footer id="footerLinksContainer"> </footer>
+
+
+
+
+<script id="articalTemplate" type="text/template">
+    <li>
+        <a href="<%= url %>"><i class="fa fa-arrow-right"></i> &nbsp;<%= title %> </a>
+    </li>
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../vendor/underscore-min.js"></script>
+<script src="../assets/scripts/static-data.js"></script>
+<script src="../assets/scripts/app.js"></script>
+<script>
+
+
+
+    (function ($) {
+
+
+        $.get('../templates/headerView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#headerView').append(tplHtml(header_data));
+        });
+
+        $.get('../templates/linksView.html', function(template) {
+            var tplHtml = _.template(template);
+            $('#footerLinksContainer').append(tplHtml(footer_links));
+        });
+
+        //article notes
+        var _noteTemplate = _.template("<%= note%>");
+        $('#articleNote').append(_noteTemplate(article_note));
+
+        //contact-me
+        var _contactTemplate = _.template("<h3><%= h1 %></h3><p><%= paragraph %></p>");
+        $('#contactContainer').append(_contactTemplate(contact_me));
+
+
+    } (jQuery));
+
+
+</script>
+</body>
+</html>

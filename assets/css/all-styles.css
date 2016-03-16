@@ -187,3 +187,7 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     color: #00445f;
     font-size: 14px;
 }
+
+
+.breadcrumb { font-size: 11px !important;}
+.date {  margin:5px 0 25px; font-size: 14px;color:#080808;}
