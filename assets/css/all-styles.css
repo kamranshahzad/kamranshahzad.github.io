@@ -188,6 +188,12 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     font-size: 14px;
 }
 
+.article-container h1{
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
 
 .breadcrumb { font-size: 11px !important;}
 .date {  margin:5px 0 25px; font-size: 14px;color:#080808;}

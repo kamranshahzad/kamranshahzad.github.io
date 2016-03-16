@@ -8,7 +8,7 @@
 /* main projects */
 .main-project-container {}
 
-.main-project-container h1, .article-container h1, .about-container h1{
+.main-project-container h1, .about-container h1{
     text-align: center;
     margin: 3rem;
     font-size: 2.5rem;
