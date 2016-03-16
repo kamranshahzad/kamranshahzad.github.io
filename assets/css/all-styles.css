@@ -126,3 +126,28 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 }
+
+
+
+
+/*
+    contact-container
+*/
+.contact-container {
+    background-color: #95dafa;
+    -webkit-border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    border-radius:0.3em;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-container h3{
+    color: #0d0d0d;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.contact-container p{
+    margin-top: 10px;
+    color: #ffffff;
+}
