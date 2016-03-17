@@ -100,3 +100,8 @@
     font-size: 14px;
     font-weight: 600;
   }
+
+
+  /* download CV button for profile */
+.log-in-notice{width:100%}
+.log-in-notice a{margin-bottom:20px;border-radius:3px;border:none;color:#ffffff;font-size:16px;text-align:center;height:50px;background-color:#2481b7;padding:0 50px;font-weight:400;height:44px;line-height:46px;display:block;text-decoration:none}
