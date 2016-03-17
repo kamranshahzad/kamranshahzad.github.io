@@ -56,6 +56,10 @@
 }
 
 
+.blog-products-page .details-box ul {
+    list-style: none;
+}
+
 
 /* Extension Box*/
 .blog-products-page .extension-box {
