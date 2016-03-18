@@ -71,8 +71,8 @@ var articals = [
     {title:"First Step: Life Cycle, Code and Performance of “SmartListings” (Part-3)",url:"http://kamranshahzad.github.io/blog/first-step_life-cycle-code-and-performance-of-smartlistings-part-3.html"},
     {title:"First Step: An Overview of first Commercial Component  (Part-2)",url:"http://kamranshahzad.github.io/blog/first-step_an-overview-of-first-commercial-component-part-2.html"},
     {title:"First Step: Why Component Development?  (Part-1)",url:"http://kamranshahzad.github.io/blog/first-step_why-component-development-part-1.html"},
-    //{title:"Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
-   // {title:"The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
+    //{title:"Create a simple theme using LayoutBundle (Symfony)",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
+   // {title:"The concept behind LayoutBundle (Symfony)",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
 ];
 
 
@@ -83,8 +83,8 @@ var article_list = {
         {date: '16 March,2016',title : "First Step: Life Cycle, Code and Performance of “SmartListings” (Part-3)",url:"http://kamranshahzad.github.io/blog/first-step_life-cycle-code-and-performance-of-smartlistings-part-3.html"},
         {date: '15 March,2016',title : "First Step: An Overview of first Commercial Component  (Part-2)",url:"http://kamranshahzad.github.io/blog/first-step_an-overview-of-first-commercial-component-part-2.html"},
         {date: '14 March,2016',title : "First Step: Why Component Development?  (Part-1)",url:"http://kamranshahzad.github.io/blog/first-step_why-component-development-part-1.html"},
-        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
-        {date: '23 August,2015',title : "The concept behind LayoutBundle",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
+        {date: '24 August,2015',title : "Create a simple theme using LayoutBundle (Symfony)",url:"http://kamranshahzad.github.io/blog/create-a-simple-theme-using-layoutbundle.html"},
+        {date: '23 August,2015',title : "The concept behind LayoutBundle (Symfony)",url:"http://kamranshahzad.github.io/blog/the-concept-behind-layoutbundle.html"},
     ]
 };
 
