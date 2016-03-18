@@ -205,3 +205,5 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
     width: 100%;
     margin: 0px !important;
 }
+
+img { margin:20px auto;display: block;max-width:100%;height:auto;}
