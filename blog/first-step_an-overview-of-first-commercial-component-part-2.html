@@ -59,21 +59,38 @@
 
             <h2><i class="fa fa-angle-double-right icon"></i>&nbsp;Requirements</h2>
             <p> 
-            	Text
+            	UI extensions are mostly written in JavaScript, but it used some helper JavaScript Library and Frameworks to enhance functionality.
             </p>
+            <div class="extension-box">
+            	<h3><i class="fa fa-angle-right"></i>&nbsp;UI Extensions</h3>
+            	<ul>
+            		<li><i class="fa fa-terminal"></i>&nbsp;JQuery 1.9+</li>
+            		<li><i class="fa fa-terminal"></i>&nbsp;Handlebars <span style="font-style:italic;">(Optional)</span></li>
+            	</ul>
+            	<h3><i class="fa fa-angle-right"></i>&nbsp;Server-Side Extensions</h3>
+            	<ul>
+            		<li><i class="fa fa-terminal"></i>&nbsp;SmartPHP (PHP 5.4+)</li>
+            		<li><i class="fa fa-terminal"></i>&nbsp;SmartPhony (Symfony 2.5+)</li>
+            		<li><i class="fa fa-terminal"></i>&nbsp;SmartWP (WordPress 4.2)</li>
+            		<li><i class="fa fa-terminal"></i>&nbsp;SmartDjango (Django 1.8+)</li>
+            		<li><i class="fa fa-terminal"></i>&nbsp;SmartExpress (Express 4.x)</li>
+            	</ul>
+            </div><!--@extension-box-->
+
+
 
             <h2><i class="fa fa-angle-double-right icon"></i>&nbsp;UI Extensions (Client-Side)</h2>
             <div class="extension-box">
             	<h3><i class="fa fa-angle-right"></i>&nbsp;SmartUrls</h3>
-            	<figure>
+            	<p>
+                    It is a very useful tool to manage URL's. On every page load it sends the information to URL Registry. URL Registry is kind of repository which saves all url and query string details. Using URL Registry user can manipulate url and its query parameter easily. URL Registry provides the URL Transformer tool to manage all URL's easily. I come with some default URL Transformation algorithms, but user can integrate own algorithm to implement custom Transformation on urls. This component used as base for “SmartFilters” and “SmartCatalog” components.
+                </p>
+                <figure>
                     <img src="images/smart-urls.png"  />
                     <figcaption>
                         SmartUrls work flow
                     </figcaption>
                 </figure>
-                <p>
-            		Text description here
-            	</p>
             	<h4><i class="fa fa-bars"></i>&nbsp;Features</h4>
                 <ul>
                 	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;Url Parsing</li>
@@ -155,18 +172,38 @@
 
                 <h3><i class="fa fa-angle-right"></i>&nbsp;SmartGrid(beta)</h3>
                 <p>
-                	text description
+                	SmartGrid Provides the facility to build a complete dynamic data grid. It comes with default controls and layout templates. “SmartForms” and “SmartFilters” could extend this component's functionality. “SmartAPI” could fill data grid using Web Services.
                 </p>
+                <h4><i class="fa fa-cog"></i>&nbsp;Controls</h4>
+                <ul>
+                	<li><i class="fa fa-arrow-right control-icon"></i>&nbsp;Sortbars</li>
+                	<li><i class="fa fa-arrow-right control-icon"></i>&nbsp;Paging</li>
+                	<li><i class="fa fa-arrow-right control-icon"></i>&nbsp;Search-able columns</li>
+                	<li><i class="fa fa-arrow-right control-icon"></i>&nbsp;Filter Controls</li>
+                	<li><i class="fa fa-arrow-right control-icon"></i>&nbsp;Loading bars</li>
+                </ul>
+
 
                 <h3><i class="fa fa-angle-right"></i>&nbsp;SmartAPI(beta)</h3>
                 <p>
-                	text description
+                	SmartAPI component is provides the bridge among UI controls and Web Services API to fill the with data. 
                 </p>
+                <h4><i class="fa fa-bars"></i>&nbsp;Features</h4>
+                <ul>
+                	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;RESTful API supported</li>
+                	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;Web Services Security layer</li>
+                	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;Maintains error log</li>
+                </ul>
 
                 <h3><i class="fa fa-angle-right"></i>&nbsp;SmartWorkflow(beta)</h3>
                 <p>
-                	text description
+                	This component work among all other components like glue. It makes process dynamic defining rules.
                 </p>
+                <h4><i class="fa fa-bars"></i>&nbsp;Features</h4>
+                <ul>
+                	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;Rules</li>
+                	<li><i class="fa fa-check-square-o feature-icon"></i>&nbsp;Attach Emails</li>
+                </ul>
 
 
 
