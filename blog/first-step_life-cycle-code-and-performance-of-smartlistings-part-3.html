@@ -46,8 +46,72 @@
             <!--Blog_Article-->
 
 
+            <h2><i class="fa fa-angle-double-right icon"></i>&nbsp;Why I write code in VanillaJS instead of JavaScript Frameworks?</h2>
+            <p>
+            	Why I prefer to write “SmartListings” components in VanillaJS instead of well reputed JavaScript Frameworks 
+            	like AngularJS or BackboneJS? I faced this question when I presented my product to anyone! 
+            	So I want to explain why I choose VanillaJS over JavaScript Frameworks
+            </p>
+            <div class="extension-box">
+            	<h3><i class="fa fa-angle-right"></i>&nbsp;Point#1</h3>
+            	<p>
+            		I started to write my component(SmartListings) in BackboneJS. Because, BackboneJS is less size and have 
+            		very strong features. In simple control rendering Backbone Views were working fine. When I started to 
+            		render nested control using BackboneJS View, I faced performance issue. That process were consuming huge 
+            		memory. My aim to build a high performance tool which could work on low memory was failing. 
+            		I start digging BackboneJS source code. 
+            	</p>
+            	<pre>
+                <code class="js"> _createElement: function(tagName) {
+      					return document.createElement(tagName);
+    			}</code>
+            	</pre>
+            	<p>
+            	It is creating DOM element dynamically that is extensive process for memory. 
+            	</p>
+
+            	<h3><i class="fa fa-angle-right"></i>&nbsp;Point#2</h3>
+            	<p>
+				Every JavaScript support VanillaJS to extends its functionality. It means “SmartListings” 
+				components could easily port to any modern JavaScript framework. This point provides the 
+				compatibility with any JavaScript framework.
+				</p>
+
+				<h3><i class="fa fa-angle-right"></i>&nbsp;Point#3</h3>
+				<p>
+					Freedom of code, JavaScript provides the flexibility to write code with freedom(Build anything attitude).
+				</p>
+				<h3><i class="fa fa-angle-right"></i>&nbsp;Point#4</h3>
+				<p>
+					Easy migration from JavaScript ES5 to ES6
+				</p>
+
+
+
+            </div><!--@extension-box-->
+
+
+
+
+
+
+            <div class="extension-box">
+            </div><!--@extension-box-->
+
+
 
             <!--@Blog_Article-->
+
+            <br/>
+            <br/>
+            <div class="navigate-articles">
+                <a href="http://kamranshahzad.github.io/blog/first-step_the-future-part-4.html"><i class="fa fa-arrow-circle-right"></i>
+                &nbsp;First Step: The Future (Part-4)
+                </a>
+            </div><!--navigate-articles-->
+
+
+
 
 
             <!--@content-->
@@ -80,12 +144,13 @@
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="../vendor/highlight/highlight.min.js"></script>
 <script src="../vendor/underscore-min.js"></script>
 <script src="../assets/scripts/static-data.js"></script>
 <script src="../assets/scripts/app.js"></script>
 <script>
 
-
+	hljs.initHighlightingOnLoad();
 
     (function ($) {
 
