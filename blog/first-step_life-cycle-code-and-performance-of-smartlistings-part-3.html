@@ -92,12 +92,28 @@
 
 
             <h2><i class="fa fa-angle-double-right icon"></i>&nbsp;Components Life Cycle</h2>
-            <p></p>
+            <p>
+            	The controls in “SmartListings” components have two states. First state is called normal state, when no default values set to controls (e.g, CheckboxGroup in filter bar with not value selected). In the second state, control have default value. This state called persist state of the control(e.g, CheckboxGroup in filter bar checked some options). These states handled by “SmartListings” components. “SmartListings” helps to build two type of web applications.
+            </p>
             <div class="extension-box">
             	<h3><i class="fa fa-angle-right"></i>&nbsp;Traditional HTTP Web Application</h3>
-            	<p></p>
+            	<p>
+            		In the traditional HTTP web application, when user click on any filter control or submit any search form. The page reload, and a query parameters added in current URL. The URL Registry store all query parameter and supply it into control based on key. Filter or search form controls get default values from URL Registry on every page reload. “SmartCatalog” received notification on every page reload and load data according to selected filter options. In traditional HTTP web application user can set the default values for “SmartFilter” or “SmartForms” controls. All values come from URL query parameters.
+            		<figure>
+		            	<img src="images/traditional-http-app.png"  />
+		            	<figcaption>
+		                    Traditional HTTP web app life cycle
+		                </figcaption>
+		            </figure>
+            	</p>
             	<h3><i class="fa fa-angle-right"></i>&nbsp;Single Page Application(SPA)</h3>
-            	<p></p>
+            	<p>
+            		SPA have two variations.
+            	</p>
+            	<ul>
+            		<li>1) Ajax based (no query parameters in URL)</li>
+            		<li>2) Route based (Modern JavaScript Frameworks, AngularJS, ExpressJS, BackboneJS etc)</li>
+            	</ul>
             </div><!--@extension-box-->
 
 
@@ -107,6 +123,12 @@
             	<h3><i class="fa fa-angle-right"></i>&nbsp;Multiple HTML Rendering</h3>
             	<p>
             		The “SmartListings” provides the diverse approach to create UI controls for web page. The control could be created by server-side rendering engine(e.g, Twig, Blade etc) or JavaScript rendering engines (e.g, Handlebar, ejs etc). It depends on the required functionality. In simple functionality, user could use any approach to create UI controls. But in complex approach, mostly both approaches works together. The dynamic control created by JavaSscript rendering engine, because it need to dynamically filled with data(i.e, control options or values etc). 
+            		<figure>
+		            	<img src="images/twig-control.png"  />
+		            	<figcaption>
+		                    Select Control in Twig
+		                </figcaption>
+		            </figure>
             	</p>
             	<h3><i class="fa fa-angle-right"></i>&nbsp;Use Minimal Options</h3>
             	<p>
